@@ -1,0 +1,129 @@
+@import 'Styles/responsive.scss';
+@import 'Styles/common/_variables';
+
+.header-container {
+  color: $cream;
+  background-color: #2b2b2b;
+  word-break: keep-all;
+  position: relative;
+  .introduce-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .content-wrapper {
+      max-width: 1140px;
+      width: calc(100% - 40px);
+      margin: 0 auto 80px;
+      @include desktop {
+        width: calc(100% - 140px);
+        margin-bottom: 120px;
+      }
+    }
+    .job-wrapper {
+      position: relative;
+      margin: 80px auto 0;
+      @include desktop {
+        margin-top: 120px;
+      }
+      .border {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: $cream;
+        transition: 0.4s;
+        &.active {
+          width: 100%;
+          transition: 0.4s;
+        }
+      }
+    }
+    .typing-area {
+      font-size: 48px;
+      white-space: pre-wrap;
+      text-align: left;
+      white-space: pre-line;
+
+      @include desktop {
+        font-size: 60px;
+      }
+    }
+    .lottie-wrapper {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      width: 50px;
+      margin: 0 auto;
+    }
+  }
+  .content-container {
+    margin: 0 auto;
+    max-width: 1140px;
+    width: calc(100% - 40px);
+    padding-top: 40px;
+    @include desktop {
+      display: flex;
+      gap: 44px;
+      padding-top: 68px;
+      width: calc(100% - 140px);
+    }
+    .index-container {
+      display: inline-flex;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+      width: 100%;
+      background-color: #2b2b2b;
+      box-shadow: 0 0px 7px 0 #2b2b2b;
+      @include desktop {
+        flex-direction: column;
+        position: static;
+        padding-top: 0;
+        padding-bottom: 140px;
+        margin-bottom: 0;
+        width: 150px;
+      }
+      a {
+        color: $cream;
+        width: 150px;
+        min-width: 150px;
+        &:hover {
+          text-decoration: underline;
+        }
+        &.active {
+          color: $cream2;
+        }
+      }
+    }
+    .children-container {
+      padding-bottom: 70px;
+      @include desktop {
+        padding-bottom: 140px;
+      }
+
+      section {
+        padding-bottom: 32px;
+        @include desktop {
+          padding-bottom: 40px;
+        }
+        h1 {
+          padding-bottom: 24px;
+          @include desktop {
+            padding-bottom: 32px;
+            font-size: 32px;
+          }
+        }
+      }
+    }
+  }
+}
