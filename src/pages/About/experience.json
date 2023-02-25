@@ -87,10 +87,10 @@
         "title": "부스 운영",
         "images": [
           {
-            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/bizcool1.jpeg"
+            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/bizcool1.png"
           },
           {
-            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/bizcool2.jpeg"
+            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/bizcool2.png"
           }
         ]
       }
@@ -107,10 +107,10 @@
         "title": "일상생활에서 발견할 수 있는 문제 해결하기",
         "images": [
           {
-            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/naver1.jpeg"
+            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/naver1.png"
           },
           {
-            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/naver2.jpeg"
+            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/naver2.png"
           }
         ]
       }
