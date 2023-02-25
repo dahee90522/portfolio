@@ -35,7 +35,7 @@ function Chip({
         ...style,
       }}
     >
-      {text}
+      {typeof text === 'function' ? text() : text}
     </div>
   );
 }

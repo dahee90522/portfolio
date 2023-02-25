@@ -15,7 +15,8 @@ const cx = classNames.bind(style);
 function NavigationBar(props) {
   const { isMobile, isTablet, isdesktop } = useResponsive();
   const { title } = props;
-  const { pathname } = window.location;
+  const location = useLocation();
+  const pathname = location.pathname;
   const [isEnter, setIsEnter] = useState(false);
   const index = [
     {
@@ -27,7 +28,7 @@ function NavigationBar(props) {
     },
     {
       id: 2,
-      text: `About 'DAHEE'`,
+      text: `About 'ME'`,
       to: '/about',
       title: `About 
     'DAHEE'`,
@@ -37,7 +38,6 @@ function NavigationBar(props) {
   const [currentTitle, setCurrentTitle] = useState('');
   useEffect(() => {
     setIsEnter(false);
-    console.log(index?.filter((item) => item?.to === pathname)[0]?.title);
     setCurrentTitle(index?.filter((item) => item?.to === pathname)[0]?.title);
     setTimeout(() => {
       setIsEnter(true);
@@ -46,31 +46,37 @@ function NavigationBar(props) {
   return (
     <>
       <div className={cx('header-container')}>
-        <div className={cx('introduce-container')}>
-          <div
-            className={cx('content-wrapper', 'job-wrapper', isTablet ? 'headline1MD' : 'title1MD')}
-          >
-            Front-end Developer
-            <div className={cx('border', isEnter ? 'active' : '')} />
-          </div>
-          <div className={cx('content-wrapper')}>
-            {isEnter && (
-              <TypeAnimation
-                sequence={[currentTitle]}
-                wrapper="div"
-                cursor={false}
-                className={cx('typing-area', 'headline1BD')}
-              />
-            )}
-          </div>
+        {!pathname.startsWith('/experience/') && (
+          <div className={cx('introduce-container')}>
+            <div
+              className={cx(
+                'content-wrapper',
+                'job-wrapper',
+                isTablet ? 'headline1MD' : 'title1MD',
+              )}
+            >
+              Front-end Developer
+              <div className={cx('border', isEnter ? 'active' : '')} />
+            </div>
+            <div className={cx('content-wrapper')}>
+              {isEnter && (
+                <TypeAnimation
+                  sequence={[currentTitle]}
+                  wrapper="div"
+                  cursor={false}
+                  className={cx('typing-area', 'headline1BD')}
+                />
+              )}
+            </div>
 
-          <Lottie
-            animationData={scrollDownJson}
-            play
-            loop={true}
-            className={cx('lottie-wrapper')}
-          />
-        </div>
+            <Lottie
+              animationData={scrollDownJson}
+              play
+              loop={true}
+              className={cx('lottie-wrapper')}
+            />
+          </div>
+        )}
         <div className={cx('content-container')}>
           <div className={cx('index-container')}>
             {index?.map((item) => {

@@ -1,0 +1,112 @@
+@import 'Styles/common/_variables.scss';
+@import 'Styles/responsive.scss';
+
+.modal-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  color: black;
+  .close-button {
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 9999;
+  }
+}
+
+.modal {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  min-width: 320px;
+  min-height: 90vh;
+  width: 80vw;
+  height: 90vh;
+  background-color: #2b2b2b;
+  color: $cream;
+  border-radius: 4px;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
+  white-space: pre-line;
+  padding: 20px 20px;
+  overflow: auto;
+  @include desktop {
+    width: 70vw;
+    padding: 44px 70px;
+  }
+  @include mobile {
+    padding: 0;
+  }
+}
+.experience-container {
+  h1 {
+    padding-bottom: 24px;
+    @include desktop {
+      padding-bottom: 32px;
+      font-size: 32px;
+    }
+  }
+  h2 {
+    padding-bottom: 24px;
+    @include desktop {
+      padding-bottom: 32px;
+    }
+  }
+  .info-wrapper {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 24px;
+    @include desktop {
+      padding-bottom: 32px;
+    }
+    h3 {
+      font-weight: 700;
+    }
+  }
+  > h3 {
+    padding-bottom: 8px;
+    @include desktop {
+      padding-bottom: 12px;
+    }
+  }
+  .detail-container {
+    .detail-wrapper {
+      padding-bottom: 8px;
+      @include desktop {
+        padding-bottom: 12px;
+      }
+    }
+    .detail-wrapper {
+      h4 {
+      }
+      .img-slide-container {
+        overflow: auto;
+        display: flex;
+        gap: 16px;
+        .image-container {
+          img {
+          }
+        }
+      }
+      .image-container {
+        img {
+          max-width: 70vw;
+          max-height: 70vh;
+          object-fit: cover;
+        }
+      }
+      .image-caption {
+        color: $cream5;
+      }
+    }
+  }
+}

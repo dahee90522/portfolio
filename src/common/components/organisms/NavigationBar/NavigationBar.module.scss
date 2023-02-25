@@ -6,6 +6,8 @@
   background-color: #2b2b2b;
   word-break: keep-all;
   position: relative;
+  height: auto;
+  min-height: 100vh;
   .introduce-container {
     position: relative;
     width: 100vw;
@@ -85,6 +87,7 @@
       width: 100%;
       background-color: #2b2b2b;
       box-shadow: 0 0px 7px 0 #2b2b2b;
+      overflow: auto;
       @include desktop {
         flex-direction: column;
         position: static;
@@ -92,11 +95,16 @@
         padding-bottom: 140px;
         margin-bottom: 0;
         width: 150px;
+        min-width: 150px;
       }
       a {
         color: $cream;
-        width: 150px;
-        min-width: 150px;
+        width: fit-content;
+        min-width: fit-content;
+        @include desktop {
+          width: 150px;
+          min-width: 150px;
+        }
         &:hover {
           text-decoration: underline;
         }
@@ -107,19 +115,28 @@
     }
     .children-container {
       padding-bottom: 70px;
+      width: inherit;
       @include desktop {
         padding-bottom: 140px;
       }
 
       section {
-        padding-bottom: 32px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #fffcec42;
+        margin-bottom: 24px;
         @include desktop {
-          padding-bottom: 40px;
+          padding-bottom: 32px;
+          margin-bottom: 32px;
+        }
+        &:last-child {
+          border: 0;
+          padding-bottom: 0;
+          margin-bottom: 0;
         }
         h1 {
           padding-bottom: 24px;
           @include desktop {
-            padding-bottom: 32px;
+            padding-bottom: 32 px;
             font-size: 32px;
           }
         }

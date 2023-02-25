@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "IT Show",
+    "description": "미림마이스터고등학교 학생들이 직접 만든 작품을 전시하여 소개하는 미림여자정보과학고등학교의 가장 중요한 행사입니다.",
+    "duration": "2020.07.09 - 2020.07.11",
+    "detail": [
+      { "title": "작품 기획 및 개발" },
+      {
+        "title": "결과물 전시",
+        "images": [
+          {
+            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/wyct.png",
+            "caption": "What’s your color for travel 전시 이미지입니다."
+          },
+          {
+            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/hoppy_dream.png",
+            "caption": "Hoppy Dream 전시 이미지입니다."
+          },
+          {
+            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/dakku.png",
+            "caption": "다꾸다꾸다꾸 전시 이미지입니다."
+          }
+        ]
+      },
+      { "title": "결과물 소개" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "일본 글로벌 인턴십",
+    "description": "UI/UX Design을 이용한 기획 등 선진 기술 과정 연수입니다.",
+    "duration": "2020.02.03 - 2020.02.23",
+    "detail": [
+      {
+        "title": "페르소나, UI/UX 를 활용한 기획",
+        "images": [
+          {
+            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/jp3.png"
+          }
+        ]
+      },
+      {
+        "title": "Journey map을 통한 문제 정의 및 해결 방안",
+        "images": [
+          {
+            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/jp5.png",
+            "caption": "What’s your color for travel 전시 이미지입니다."
+          }
+        ]
+      },
+      { "title": "일본 문화 체험" },
+      { "title": "기획한 웹 프로젝트 개발" },
+      {
+        "title": "결과물 발표",
+        "images": [
+          {
+            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/jp2.jpeg"
+          },
+          {
+            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/jp1.jpeg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "전국 고등학생 공공데이터 활용 경진대회",
+    "description": "사회문제 해결, 삶의 질 향상을 위한 공공데이터 활용 아이디어 및 서비스 제안을 주제로 전국 고등학생을 대상으로 한 공모전입니다.",
+    "duration": "2019.10.12 - 2020.07.11",
+    "detail": [
+      { "title": "분석 및 시각화 교육, 멘토링" },
+      { "title": "공공데이터 개념 교육" },
+      { "title": "공공데이터를 활용한 아이디어 발표" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "비즈쿨 마켓",
+    "description": "청소년 창업교육 프로그램으로 '학교 교육과정에서 비즈니스를 배운다'는 의미입니다.",
+    "duration": "2018.05.16 - 2019.07.15",
+    "detail": [
+      { "title": "상품 제작 연습" },
+      { "title": "판매 상품 준비" },
+      {
+        "title": "부스 운영",
+        "images": [
+          {
+            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/bizcool1.jpeg"
+          },
+          {
+            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/bizcool2.jpeg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "네이버 청소년 앙트십 스쿨",
+    "description": "한 학기 단위로 교육을 진행하는 앙트십 프로젝트 워크샵으로 직접 일상 속의 문제를 발견하고 해결 방안을 도출해 직접 실험해보는 활동입니다.",
+    "duration": "2018.09.01 - 2018.12.22",
+    "detail": [
+      { "title": "만원 프로젝트" },
+      {
+        "title": "일상생활에서 발견할 수 있는 문제 해결하기",
+        "images": [
+          {
+            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/naver1.jpeg"
+          },
+          {
+            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/naver2.jpeg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Django girls 워크샵",
+    "description": "장고에 대한 프로그래밍 입문을 도우며, 초보자를 위한 이틀 간의 워크샵에 참여했습니다.",
+    "duration": "2018.07.20 - 2018.07.21",
+    "detail": [
+      { "title": "장고 걸스 튜토리얼을 따라 프로그래밍" },
+      {
+        "title": "장고로 웹사이트 개발해보기",
+        "images": [
+          {
+            "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/djangogirls2.png"
+          },
+          { "url": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/djangogirls1.png" }
+        ]
+      }
+    ]
+  }
+]
