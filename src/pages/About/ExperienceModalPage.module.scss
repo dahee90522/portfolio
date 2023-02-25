@@ -59,7 +59,7 @@
         img {
           width: 100%;
           max-height: 70vh;
-          height: 70vh;
+          height: 70vw;
           object-fit: cover;
         }
       }
@@ -112,9 +112,6 @@
     width: 70vw;
     padding: 44px 70px;
   }
-  @include mobile {
-    padding: 0;
-  }
   .detail-container {
     .detail-wrapper {
       .image-container {
@@ -129,7 +126,7 @@
         img {
           width: 100%;
           max-height: 70vh;
-          height: 70vh;
+          height: 60vw;
           object-fit: cover;
         }
       }

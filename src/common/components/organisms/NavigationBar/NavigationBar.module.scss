@@ -115,8 +115,8 @@
     }
     .children-container {
       padding-bottom: 70px;
-      width: inherit;
       @include desktop {
+        width: inherit;
         padding-bottom: 140px;
       }
 

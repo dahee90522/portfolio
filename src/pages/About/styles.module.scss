@@ -202,8 +202,12 @@
         width: calc(50% - 10px);
         background-color: $cream1;
         border-radius: 12px;
-        padding: 20px 20px 40px;
+        padding: 20px 12px 40px;
+        word-break: break-all;
         position: relative;
+        @include tablet {
+          padding: 20px 20px 40px;
+        }
         h3 {
           color: $greyscale9;
           border-bottom: 1px solid $greyscale5;
