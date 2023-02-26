@@ -1,3 +1,4 @@
+import { Link, useHistory } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import {
   SvgBootStrap,
@@ -23,7 +24,6 @@ import {
 } from 'Assets/svgs';
 
 import { Chip } from 'Components/molecules';
-import { Link } from 'react-router-dom';
 import Lottie from 'react-lottie-player';
 import SvgDND from 'Assets/svgs/dnd-logo.svg';
 import SvgDNDSM from 'Assets/svgs/dnd-logo-sm.svg';
@@ -37,8 +37,10 @@ import scrollDownJson from 'Assets/lottie/scroll-down.json';
 import styles from './styles.module.scss';
 import { useResponsive } from 'Utils/responsive';
 
+const baseImageUrl = 'https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/';
 const cx = classNames.bind(styles);
 function About() {
+  const history = useHistory();
   const { isMobile, isTablet, isdesktop } = useResponsive();
   let careerDate = moment().diff(moment('2020-11-02'), 'months');
   const languages = [
@@ -54,7 +56,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
         {
@@ -66,7 +68,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
         {
@@ -78,7 +80,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
         {
@@ -91,7 +93,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
         {
@@ -103,7 +105,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
         {
@@ -116,7 +118,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
         {
@@ -128,7 +130,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
         {
@@ -140,7 +142,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
       ],
@@ -158,7 +160,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
         {
@@ -170,7 +172,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
         {
@@ -182,7 +184,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
         {
@@ -194,7 +196,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
         {
@@ -206,7 +208,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
         {
@@ -218,7 +220,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
       ],
@@ -235,7 +237,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
         {
@@ -247,7 +249,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
         {
@@ -259,7 +261,7 @@ function About() {
               </>
             );
           },
-          textColor: '#2b2b2b',
+          textColor: '#1b1b1e',
           backgroundColor: '#fffcec',
         },
       ],
@@ -271,100 +273,55 @@ function About() {
       skills: [
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                Amplitude
-              </>
-            );
+            return <>Amplitude</>;
           },
           type: 'analytics',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                Redash
-              </>
-            );
+            return <>Redash</>;
           },
           type: 'analytics',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                Google Analytics
-              </>
-            );
+            return <>Google Analytics</>;
           },
           type: 'analytics',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                Google Tag Manager
-              </>
-            );
+            return <>Google Tag Manager</>;
           },
           type: 'analytics',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                PostMan
-              </>
-            );
+            return <>PostMan</>;
           },
           type: 'tool',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                Slack
-              </>
-            );
+            return <>Slack</>;
           },
           type: 'tool',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                Asana
-              </>
-            );
+            return <>Asana</>;
           },
           type: 'tool',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                Notion
-              </>
-            );
+            return <>Notion</>;
           },
           type: 'tool',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                Figma
-              </>
-            );
+            return <>Figma</>;
           },
           type: 'tool',
         },
@@ -375,111 +332,61 @@ function About() {
       skills: [
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                AWS - CloudFront
-              </>
-            );
+            return <>AWS - CloudFront</>;
           },
           type: 'hosting',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                AWS - S3
-              </>
-            );
+            return <>AWS - S3</>;
           },
           type: 'hosting',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                AWS - Route53
-              </>
-            );
+            return <>AWS - Route53</>;
           },
           type: 'hosting',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                Firebase - hosting
-              </>
-            );
+            return <>Firebase - hosting</>;
           },
           type: 'hosting',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                Sentry
-              </>
-            );
+            return <>Sentry</>;
           },
           type: 'analytics',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                Bigin
-              </>
-            );
+            return <>Bigin</>;
           },
           type: 'analytics',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                Eclipse
-              </>
-            );
+            return <>Eclipse</>;
           },
           type: 'tool',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                SQL Developer
-              </>
-            );
+            return <>SQL Developer</>;
           },
           type: 'tool',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                MySQL Workbench
-              </>
-            );
+            return <>MySQL Workbench</>;
           },
           type: 'tool',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                Swagger
-              </>
-            );
+            return <>Swagger</>;
           },
           type: 'tool',
         },
@@ -490,50 +397,39 @@ function About() {
       skills: [
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                Hot Jar
-              </>
-            );
+            return <>Hot Jar</>;
           },
           type: 'analytics',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                Android Studio
-              </>
-            );
+            return <>Android Studio</>;
           },
           type: 'tool',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                Edit Plus
-              </>
-            );
+            return <>Edit Plus</>;
           },
           type: 'tool',
         },
         {
           text: () => {
-            return (
-              <>
-                {/* <SvgSpring style={{ fill: '#6DB33F' }} /> */}
-                PyCharm
-              </>
-            );
+            return <>PyCharm</>;
           },
           type: 'tool',
         },
       ],
     },
+  ];
+  const workingPage = [
+    { coverImage: 'response_web_image.png', title: '반응형 웹', url: '/about/naamezip/response' },
+    {
+      coverImage: 'daangn_x_naamezip.png',
+      title: '당근마켓 미니앱 개발',
+      url: '/about/naamezip/miniapp',
+    },
+    { coverImage: 'component-cover.png', title: '컴포넌트', url: '/about/naamezip/component' },
   ];
   return (
     <div className={cx('about-container')}>
@@ -546,10 +442,13 @@ function About() {
             />
           </div>
           <div className={cx('left-content')}>
+            <h1 className={cx('headline1BD')} style={{ paddingBottom: '12px' }}>
+              황다희
+            </h1>
             <div className={cx('chip-container')}>
               <Chip
                 text={`Frontend-Devloper`}
-                textColor="#2b2b2b"
+                textColor="#1b1b1e"
                 backgroundColor="#fffcec"
                 size="LG"
                 className={cx('label', isTablet ? 'captionBD' : 'overlineBD')}
@@ -557,7 +456,7 @@ function About() {
               <a href="https://ko.reactjs.org/">
                 <Chip
                   text={`React.js`}
-                  textColor="#2b2b2b"
+                  textColor="#1b1b1e"
                   backgroundColor="#fffcec"
                   size="LG"
                   className={cx('label', isTablet ? 'captionBD' : 'overlineBD')}
@@ -619,7 +518,7 @@ function About() {
                     return (
                       <Chip
                         text={skill?.text}
-                        textColor="#2b2b2b"
+                        textColor="#1b1b1e"
                         backgroundColor={
                           skill?.type === 'analytics'
                             ? '#dbeddb'
@@ -656,9 +555,11 @@ function About() {
               </h3>
             </div>
           </div>
-          <div className={cx('activicy-description', 'bodyMD')}>
+          <div className={cx('activicy-description', 'bodyRG')}>
             <ol>
-              <li className={cx('bodyBD')}>홈페이지 전반 ui/ux 개선 및 유지보수</li>
+              <li className={cx(isTablet ? 'title2BD' : 'bodyBD')}>
+                홈페이지 전반 ui/ux 개선 및 유지보수
+              </li>
               <ul>
                 <li>
                   디자이너와의 커뮤니케이션을 통해 유지보수 및 홈페이지의 페이지들을 개발했습니다.
@@ -669,7 +570,7 @@ function About() {
                   변경하였습니다.
                 </li>
               </ul>
-              <li className={cx('bodyBD')}>반응형 웹 개선</li>
+              <li className={cx(isTablet ? 'title2BD' : 'bodyBD')}>반응형 웹 개선</li>
               <ul>
                 <li>
                   기존에는 모바일과 데스크탑 사이즈밖에 없었지만 태블릿을 추가하여 3가지의 디바이스
@@ -679,7 +580,7 @@ function About() {
                   sass의 mixin과 include를 사용하여 사이즈를 재사용하여 지정할 수 있도록 했습니다.
                 </li>
               </ul>
-              <li className={cx('bodyBD')}>홈페이지 분석</li>
+              <li className={cx(isTablet ? 'title2BD' : 'bodyBD')}>홈페이지 분석</li>
               <ol>
                 <li>마케팅 팀과 협업하여 아래의 CRM/분석 툴을 설치 했습니다.</li>
                 <ol>
@@ -695,7 +596,7 @@ function About() {
                   <li>Happy Talk(해피톡)</li>
                 </ol>
               </ol>
-              <li className={cx('bodyBD')}>데이터 시각화</li>
+              <li className={cx(isTablet ? 'title2BD' : 'bodyBD')}>데이터 시각화</li>
               <ul>
                 <li>
                   지표에 필요한 데이터를 database에서 추출한 결과를 통해 차트, 표 등으로 데이터
@@ -703,18 +604,33 @@ function About() {
                 </li>
                 <li>redash를 사용하여 데이터 시각화를 하였습니다.</li>
               </ul>
-              <li className={cx('bodyBD')}>컴포넌트 개발</li>
+              <li className={cx(isTablet ? 'title2BD' : 'bodyBD')}>컴포넌트 개발</li>
               <ul>
                 <li>
                   infinity scroll, pagination 등 컴포넌트를 개발하여 재사용할 수 있도록 하였습니다.
                 </li>
               </ul>
-              <li className={cx('bodyBD')}>애자일(Agile)</li>
+              <li className={cx(isTablet ? 'title2BD' : 'bodyBD')}>애자일(Agile)</li>
               <ol>
                 <li>2주 단위로 스프린트를 진행했습니다.</li>
                 <li>스프린트 마지막 날에 다음 스프린트를 위한 플래닝 회의를 했습니다.</li>
               </ol>
             </ol>
+          </div>
+        </div>
+        <div className={cx('naamezip-activity')}>
+          <h2 className={cx(isTablet ? 'headline2SB' : 'title1BD')}>남의집 프로젝트 보기</h2>
+          <div className={cx('items-container')}>
+            {workingPage?.map((page, index) => {
+              return (
+                <div onClick={() => history.push(page?.url)}>
+                  <div className={cx('image-container')}>
+                    <img src={baseImageUrl + page?.coverImage} />
+                  </div>
+                  <h3 className={cx(isTablet ? 'title2MD' : 'bodyMD')}>{page?.title}</h3>
+                </div>
+              );
+            })}
           </div>
         </div>
         <div className={cx('job-desc-wrapper', 'dnd-wrapper')}>
@@ -733,13 +649,13 @@ function About() {
           </div>
           <div className={cx('activicy-description', 'bodyMD')}>
             <ol>
-              <li className={cx('bodyBD')}>DND 운영</li>
+              <li className={cx(isTablet ? 'title2BD' : 'bodyBD')}>DND 운영</li>
               <ul>
                 <li>사이드프로젝트 7기 지원자 선발</li>
                 <li>사이드프로젝트 8기 지원자 선발</li>
                 <li>조 멘토링(2022.07 - )</li>
               </ul>
-              <li className={cx('bodyBD')}>개발 세미나 계획</li>
+              <li className={cx(isTablet ? 'title2BD' : 'bodyBD')}>개발 세미나 계획</li>
             </ol>
           </div>
         </div>
@@ -791,4 +707,4 @@ function About() {
 }
 export default About;
 
-export const path = '/about';
+export const path = ['/', '/about'];

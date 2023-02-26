@@ -21,19 +21,26 @@ function NavigationBar(props) {
   const index = [
     {
       id: 1,
-      text: 'Home',
+      text: `Home`,
       to: '/',
       title: `DAHEE
-    PORTFOLIO`,
+      PORTFOLIO`,
+      activeReg: [/^$/],
     },
     {
       id: 2,
-      text: `About 'ME'`,
-      to: '/about',
-      title: `About 
-    'DAHEE'`,
+      text: 'Projects',
+      to: '/projects',
+      title: 'PROJECTS',
+      activeReg: [/^\/project/g, /\/projects/],
     },
-    { id: 3, text: 'Projects', to: '/projects', title: 'PROJECTS' },
+    {
+      id: 3,
+      text: 'Contact',
+      to: '/contact',
+      title: 'CONTACT',
+      activeReg: [/^\/contact/],
+    },
   ];
   const [currentTitle, setCurrentTitle] = useState('');
   useEffect(() => {
@@ -46,7 +53,7 @@ function NavigationBar(props) {
   return (
     <>
       <div className={cx('header-container')}>
-        {!pathname.startsWith('/experience/') && (
+        {['/', '/about', '/projects', '/contact'].includes(pathname) && (
           <div className={cx('introduce-container')}>
             <div
               className={cx(
@@ -84,8 +91,14 @@ function NavigationBar(props) {
                 <Link
                   to={item?.to}
                   className={cx(
-                    pathname === item?.to ? 'active' : '',
-                    pathname === item?.to ? 'title1BD' : 'title1RG',
+                    item?.activeReg?.some((reg) => new RegExp(reg).test(pathname)) ||
+                      pathname === item?.to
+                      ? 'active'
+                      : '',
+                    item?.activeReg?.some((reg) => new RegExp(reg).test(pathname)) ||
+                      pathname === item?.to
+                      ? 'title1BD'
+                      : 'title1RG',
                   )}
                 >
                   {item?.text}

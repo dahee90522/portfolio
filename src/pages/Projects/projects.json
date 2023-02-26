@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "title": "What’s your color of travel",
+    "type": "WEB",
+    "skills": [
+      { "text": "HTML5", "color": "#ffae97" },
+      { "text": "CSS3", "color": "#82a8c5" },
+      { "text": "JavaScript", "color": "#eee27e" },
+      { "text": "jQuery", "color": "#8cbee1" },
+      { "text": "JSP", "color": "#86aacd" },
+      { "text": "mysql", "color": "#9dbed6" }
+    ],
+    "tools": [
+      { "text": "eclipse", "color": "#b0a1ec" },
+      { "text": "mysql workbench", "color": "#a9d8ec" }
+    ],
+    "peoples": { "total": 4, "designer": 1, "developer": 3 },
+    "contribution": "3/5",
+    "roles": ["기획", "백엔드", "프론트엔드"],
+    "duration": "2020.02.15 - 2020.08.01",
+    "coverImage": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/wtct_coverimage.png",
+    "introduceImage": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/wtct_introduce.png",
+    "images": [
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/wtct1.png",
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/wyct2.png",
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/wyct3.png"
+    ],
+    "details": [
+      {
+        "title": "작품 설명",
+        "image": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/wyct4.png",
+        "description": "설문을 통해 자신의 색에 맞는 지역을 추천해주는 웹사이트\n\n오랜 시간동안 회사생활 혹은 일, 공부 등에 지친 사람 사람들에게 만족스러운 여행을 위해 여행지를 추천해주고 싶다는 생각을 했습니다.\n\n매번 각자가 처해진 상황과 감정에 따라서 떠나고 싶은 곳이 다 다르다는 것을 깨달았지만, 그럼에도 불구하고 여행지로 찾을 수 있는 곳은 매우 한정적이라는 것을 알게 되었습니다."
+      },
+      {
+        "title": "목표",
+        "description": "이 웹사이트를 통해서 홍보가 잘 되지 않았던 다른 지역을 좀 더 확성화 시키며 자신의 여행스타일에 맞는 곳을 여행할 수 있도록 해주는 것이 이 웹사이트의 목표입니다."
+      },
+      {
+        "title": "키워드",
+        "type": "flexable",
+        "lists": [
+          {
+            "title": "색",
+            "description": [
+              "설문조사를 통해서 글보다는 색으로 결과를 도출하여 시각적으로 흥미롭고 보기 편하게 하였습니다.",
+              "카테고리(분위기, 날씨)를 정하여 각 상황이나 주제에 알맞는 색을 선정하였습니다."
+            ]
+          },
+          {
+            "title": "설문조사",
+            "description": [
+              "어떻게 보면 설문조사를 목적으로 이루어진 웹사이트가 매우 단순하게 이루어졌다고 생각하실 수 있들 것 같아 주변에 일러스트를 넣어 좀 더 활발하고 재미있게 표현했습니다.",
+              "각 지역별로 해시태그를 부여해서 설문을 진행했습니다.",
+              "각 제역별 하나의 주제 당 하나의 결과밖에 없으면 설문조사 후 결과가 너무 적어 최대한 많은 값이 나올 수 있도록 하나의 주제당 여러개의 결과를 부여했습니다.",
+              {
+                "image": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/wyct5.png"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "databases": [
+      {
+        "images": [
+          "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/wyct_database1.png",
+          "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/wyct1_database_web.png"
+        ],
+        "caption": "지역별 정보를 저장하는 데이터베이스입니다."
+      },
+      {
+        "images": [
+          "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/wyct2_database.png",
+          "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/wyct2_database_web.png"
+        ],
+        "caption": "여행 후기를 저장하는 데이터베이스입니다."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "다꾸다꾸다꾸",
+    "type": "WEB",
+    "skills": [
+      { "text": "HTML5", "color": "#ffae97" },
+      { "text": "CSS3", "color": "#82a8c5" },
+      { "text": "JavaScript", "color": "#eee27e" },
+      { "text": "jQuery", "color": "#8cbee1" },
+      { "text": "php", "color": "#a9addd" },
+      { "text": "ajax", "color": "#7aacd9" },
+      { "text": "mysql", "color": "#9dbed6" }
+    ],
+    "tools": [
+      { "text": "Visual Studio Code", "color": "#7ac2fb" },
+      { "text": "mysql workbench", "color": "#a9d8ec" },
+      { "text": "figma", "color": "#81caff" },
+      { "text": "xampp", "color": "#ffc6a1" }
+    ],
+    "peoples": { "total": 5, "developer": 5 },
+    "contribution": "4/5",
+    "roles": ["기획", "백엔드", "프론트엔드", "디자인"],
+    "duration": "2020.03.01 - 2020.08.16",
+    "coverImage": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/dakku-cover.png",
+    "images": [
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/dakku1.png",
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/dakku2.png",
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/dakku3.png",
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/dakku4.png"
+    ],
+    "details": [
+      {
+        "title": "작품 설명",
+        "description": "∙ 다이어리 꾸미기를 할 수 있는 웹사이트 입니다.\n∙ 취향에 따라 마스킹 테이프, 스티커 등으로 꾸밀 수 있으며\n꾸민 다이어리에 일기를 작성하여 공유를 할 수 있는 기능을 가졌습니다."
+      },
+      {
+        "title": "주요 사용자",
+        "description": "이 웹사이트를 통해서 홍보가 잘 되지 않았던 다른 지역을 좀 더 확성화 시키며 자신의 여행스타일에 맞는 곳을 여행할 수 있도록 해주는 것이 이 웹사이트의 목표입니다."
+      },
+      {
+        "title": "기능",
+        "lists": [
+          {
+            "title": "다이어리 쓰기"
+          },
+          {
+            "title": "다이어리 꾸미기",
+            "description": [
+              "떡메모지, 마스킹 테이프, 스티커 등을 원하는 곳에 부착하여 자유롭게 꾸민 후 기억하고 싶은 일을 적는다."
+            ]
+          },
+          {
+            "title": "다 쓴 다이어리 저장하기"
+          },
+          {
+            "title": "자신이 적었던 다이어리를 볼 수 있다."
+          },
+          {
+            "title": "자신이 적은 다이어리를 타인과 공유할 수 있다."
+          },
+          {
+            "title": "타인이 꾸민 다이어리 이미지를 볼 수 있다.(참고용)"
+          },
+          {
+            "title": "타인이 꾸민 다이어리에 [좋아요]를 누를 수 있다."
+          }
+        ]
+      }
+    ],
+    "databases": [
+      {
+        "images": [
+          "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/dakku_database1.png",
+          "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/dakku-database1_web.png"
+        ],
+        "caption": "회원가입 데이터베이스입니다."
+      },
+      {
+        "images": [
+          "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/dakku-database2.png",
+          "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/dakku-database2_web.png"
+        ],
+        "caption": "게시판, 결과물 저장 데이터베이스입니다."
+      },
+      {
+        "images": ["https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/dakku-database3.png"],
+        "caption": "좋아요 기능을 위한 데이터베이스입니다.\n사용자가 게시글에 하트를 누르게 되면 articles_likes 테이블에 중복으로 누르는 것을 방지하기 위해 사용자의 회원번호와 게시글의 번호가 들어가게 됩니다."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "hoppy dream",
+    "type": "WEB",
+    "site": "https://hoppydream.emirim.kr/",
+    "skills": [
+      { "text": "HTML5", "color": "#ffae97" },
+      { "text": "CSS3", "color": "#82a8c5" },
+      { "text": "JavaScript", "color": "#eee27e" },
+      { "text": "jQuery", "color": "#8cbee1" },
+      { "text": "php", "color": "#a9addd" },
+      { "text": "mysql", "color": "#9dbed6" }
+    ],
+    "tools": [
+      { "text": "Visual Studio Code", "color": "#7ac2fb" },
+      { "text": "mysql workbench", "color": "#a9d8ec" },
+      { "text": "xampp", "color": "#ffc6a1" }
+    ],
+    "peoples": { "total": 5, "developer": 3, "designer": 2 },
+    "contribution": "4/5",
+    "roles": ["기획", "백엔드", "프론트엔드"],
+    "duration": "2019.10.01 - 2020.07.17",
+    "coverImage": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/hoppydream-coverImage.png",
+    "images": [
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/hoppydream1.png",
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/hoppydream2.png"
+    ],
+    "details": [
+      {
+        "title": "기획서",
+        "image": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/hoppydream-proposal.png"
+      },
+      {
+        "title": "작품 설명",
+        "description": "결식아동들을 위해 지원되는 ‘꿈나무 카드’가 사용 가능한 가맹점들의 위치를 보다 쉽게 찾을 수 있도록 가맹점의 위치 제공 뿐만 아니라 그 가맹점에 대한 정보와 후기들을 작성할 수 있도록 하여 결식 아동들이 좀 더 편리하게 이용할 수 있도록 하는 웹서비스 입니다."
+      },
+      {
+        "title": "주요 사용자",
+        "description": "∙ 먹고 싶은 음식들을 주어진 정보 안에서 조금 더 폭넓게 고를 수 있습니다.\n∙ 결식아동들이 꿈나무 카드 사용에 있어서 조금 더 부담을 덜 수 있다는 효과가 있습니다.\n∙ 가맹점을 사용하고 느낀 점을 남길 수 있는 후기 기능과 별점 기능을 사용하여 결식아동들이 좀 더 청결하고 안전한 곳에서 눈치 보지 않고 당당하게 꿈나무 카드를 이용할 수 있을 것입니다"
+      },
+      {
+        "title": "꿈나무 카드 가맹점이란?",
+        "lists": [
+          {
+            "description": [
+              "대상 : 보호자의 식사제공이 어려워 결식우려가 있는 18세 미만의 취학 및 미취학 아동\n(중위소득 52%이하 가구의 아동)",
+              "하루 한끼 지원 금액 : 5000원",
+              "사용가능 시간 : 오전 6시 ~ 오후 10시 식사시간",
+              "사용가능한 곳 : 서울의 모든 편의점, 꿈나무 카드 가맹점 식당들"
+            ]
+          }
+        ]
+      }
+    ],
+    "databases": [
+      {
+        "images": [
+          "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/hoppydream_database1.png",
+          "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/hoppydream_database1_web.png"
+        ],
+        "caption": "꿈나무 카드 가맹점의 정보가 담긴 데이터베이스입니다."
+      },
+      {
+        "images": [
+          "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/hoppydream_database2.png",
+          "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/hoppydream_database2_web.png"
+        ],
+        "caption": "식당을 다녀온 후 적는 후기의 데이터베이스입니다.\n- 별점을 정하여 제출하게 되면 선택이 된 별의 수를 저장합니다.\n- Img는 서버내의 폴더에 이미지를 저장하여 그 경로를 저장하게 됩니다."
+      }
+    ]
+  }
+]

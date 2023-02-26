@@ -19,10 +19,11 @@ function ExperienceModalPage({ match, history, ...props }) {
   const experienceId = match.params?.experienceId;
   const [isModal, setIsModal] = useState(props?.isModal);
   console.log(experienceLists);
-  const [experienceData, setExperienceData] = experienceLists?.filter((list) => {
-    return list?.id === parseInt(experienceId);
-  });
-  console.log(experienceData);
+  const [experienceData, setExperienceData] = useState(
+    experienceLists?.filter((list) => {
+      return list?.id === parseInt(experienceId);
+    })[0],
+  );
   if (isModal) {
     return (
       <div ref={modalRef} className={cx('modal-wrapper')} onClick={() => history.goBack()}>

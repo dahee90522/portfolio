@@ -1,0 +1,16 @@
+@import 'Styles/responsive.scss';
+@import 'Styles/common/_variables';
+
+.naamezip-response-container {
+  white-space: pre-line;
+  h1 {
+    margin-bottom: 24px;
+    @include desktop {
+      margin-bottom: 32px;
+      font-size: 32px;
+    }
+  }
+  .code-image {
+    width: 100%;
+  }
+}

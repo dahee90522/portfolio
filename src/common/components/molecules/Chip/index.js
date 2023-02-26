@@ -16,6 +16,7 @@ function Chip({
   noBorder,
   className,
   style,
+  ...props
 }) {
   return (
     <div
@@ -34,6 +35,7 @@ function Chip({
         borderColor: borderColor,
         ...style,
       }}
+      {...props}
     >
       {typeof text === 'function' ? text() : text}
     </div>

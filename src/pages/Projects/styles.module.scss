@@ -2,4 +2,261 @@
 @import 'Styles/common/_variables';
 
 .projects-container {
+  h2 {
+  }
+  .project-item-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: $cream;
+    overflow: hidden;
+    margin-top: 20px;
+    &:hover {
+      color: $cream5;
+    }
+    @include tablet {
+      gap: 20px;
+      align-items: center;
+      flex-direction: row;
+    }
+    .coverimage-container {
+      width: 100%;
+      max-width: 100%;
+      height: 160px;
+      max-height: 160px;
+      @include tablet {
+        width: 160px;
+        max-width: 160px;
+        height: 102px;
+        max-height: 102px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    h3 {
+      margin-top: 12px;
+      margin-bottom: 8px;
+    }
+  }
+}
+.project-detail-container {
+  white-space: pre-line;
+  h1 {
+    margin-bottom: 24px;
+    @include desktop {
+      margin-bottom: 32px;
+      font-size: 32px;
+    }
+  }
+  .container {
+    padding-bottom: 24px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    &:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+    @include desktop {
+      padding-bottom: 32px;
+    }
+  }
+  .cover-image-container {
+    border-bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .information-container {
+    > div {
+      display: flex;
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      > div {
+        &:first-child {
+          width: 80px;
+          min-width: 80px;
+          @include tablet {
+            width: 150px;
+            min-width: 150px;
+          }
+        }
+        &:last-child {
+          display: flex;
+          gap: 4px;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          a {
+            color: $cream;
+            &:hover {
+              color: $cream4;
+            }
+          }
+        }
+      }
+    }
+  }
+  .introduce-images-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+    }
+    &.introduce-image {
+      > img {
+        width: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        @include tablet {
+          width: 40%;
+          max-width: 40%;
+        }
+      }
+      > div {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        @include tablet {
+          width: calc(60% - 12px);
+          max-width: calc(60% - 12px);
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &.no-introduce-image {
+      > div {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        max-width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .detail-container {
+    .detail-wrapper {
+      margin-bottom: 20px;
+      h2 {
+        margin-bottom: 8px;
+      }
+      h3 {
+        white-space: pre-line;
+      }
+      > img {
+        margin-top: 8px;
+        width: 100%;
+        max-width: 100%;
+        @include tablet {
+          width: 60%;
+          max-width: 60%;
+        }
+      }
+      .list-container {
+        margin-bottom: 8px;
+        &:last-child {
+          margin: 0;
+        }
+        h4 {
+          margin-bottom: 4px;
+        }
+        &.flexable-list {
+          display: flex;
+          h4 {
+            min-width: 75px;
+            width: 75px;
+            @include desktop {
+              min-width: 100px;
+              width: 100px;
+            }
+          }
+        }
+        .list-description-container {
+          > div {
+            display: flex;
+            align-items: flex-start;
+            gap: 4px;
+            margin-bottom: 4px;
+            img {
+              width: 100%;
+              @include desktop {
+                width: 60%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .databases-container {
+    h2 {
+      margin-bottom: 20px;
+    }
+    .database-wrapper {
+      width: 100%;
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .image-container {
+        margin-bottom: 4px;
+        width: 100%;
+        overflow: auto;
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+        @include tablet {
+          flex-direction: row;
+        }
+        > div {
+          &:first-child {
+            width: 100%;
+            max-width: 100%;
+            img {
+              width: 100%;
+              object-fit: cover;
+            }
+            @include tablet {
+              width: 60%;
+              max-width: 60%;
+            }
+          }
+          &:last-child {
+            width: 100%;
+            max-width: 100%;
+            img {
+              width: 100%;
+              object-fit: cover;
+            }
+            @include tablet {
+              width: calc(40% - 12px);
+              max-width: calc(40% - 12px);
+            }
+          }
+        }
+      }
+      .caption-container {
+      }
+    }
+  }
 }
