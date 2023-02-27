@@ -665,7 +665,7 @@ function About() {
         <div className={cx('education-wrapper')}>
           <div className={cx('school', isTablet ? 'headline2SB' : 'title1BD')}>방송통신대학교</div>
           <div className={cx('school-info')}>
-            <h4 className={cx(isTablet ? 'title2BD' : 'bodyBD')}>컴퓨터 과학과</h4>
+            <h4 className={cx(isTablet ? 'title2MD' : 'bodyMD')}>컴퓨터 과학과</h4>
             <h5 className={cx(isTablet ? 'title2RG' : 'bodyRG')}>2021년 입학 - 재학 중</h5>
           </div>
         </div>
@@ -674,8 +674,38 @@ function About() {
             미림여자정보과학고등학교
           </div>
           <div className={cx('school-info')}>
-            <h4 className={cx(isTablet ? 'title2BD' : 'bodyBD')}>뉴미디어 소프트웨어과</h4>
+            <h4 className={cx(isTablet ? 'title2MD' : 'bodyMD')}>뉴미디어 소프트웨어과</h4>
             <h5 className={cx(isTablet ? 'title2RG' : 'bodyRG')}>2018년 입학 - 2021년 2월 졸업</h5>
+          </div>
+        </div>
+      </section>
+      <section className={cx('certificate-container')} id="certificate">
+        <h1 className={cx('headline1BD')}>CERTIFICATE</h1>
+        <div className={cx('certificate-wrapper')}>
+          <div className={cx('certificate', isTablet ? 'headline2SB' : 'title1BD')}>
+            정보처리 기능사
+          </div>
+          <div className={cx('certificate-info')}>
+            <h4 className={cx(isTablet ? 'title2MD' : 'bodyMD')}>과학기술정보통신부</h4>
+            <h5 className={cx(isTablet ? 'title2RG' : 'bodyRG')}>2020년 8월 취득</h5>
+          </div>
+        </div>
+        <div className={cx('certificate-wrapper')}>
+          <div className={cx('certificate', isTablet ? 'headline2SB' : 'title1BD')}>
+            ITQ 아래한글 (A)
+          </div>
+          <div className={cx('certificate-info')}>
+            <h4 className={cx(isTablet ? 'title2MD' : 'bodyMD')}>한국생산성본부</h4>
+            <h5 className={cx(isTablet ? 'title2RG' : 'bodyRG')}>2019년 5월 취득</h5>
+          </div>
+        </div>
+        <div className={cx('certificate-wrapper')}>
+          <div className={cx('certificate', isTablet ? 'headline2SB' : 'title1BD')}>
+            ITQ 한글파워포인트 (B)
+          </div>
+          <div className={cx('certificate-info')}>
+            <h4 className={cx(isTablet ? 'title2MD' : 'bodyMD')}>한국생산성본부</h4>
+            <h5 className={cx(isTablet ? 'title2RG' : 'bodyRG')}>2019년 5월 취득</h5>
           </div>
         </div>
       </section>

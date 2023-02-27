@@ -275,4 +275,31 @@
       }
     }
   }
+  .prize-container {
+    a {
+      color: $cream;
+      margin-bottom: 8px;
+      display: inline-block;
+      &:hover {
+        color: $cream5;
+      }
+    }
+    .prize {
+      &-number {
+        margin-bottom: 4px;
+      }
+      &-date {
+        margin-bottom: 4px;
+      }
+      &-org {
+        margin-bottom: 20px;
+      }
+      &-description {
+        margin-bottom: 4px;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
 }

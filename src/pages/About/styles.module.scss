@@ -250,6 +250,38 @@
       }
     }
   }
+  .certificate-container {
+    .certificate-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin: 0;
+      }
+      @include tablet {
+        flex-direction: row;
+        gap: 16px;
+        margin-bottom: 20px;
+      }
+      @include desktop {
+        gap: 24px;
+      }
+      .certificate {
+        width: 100%;
+        @include tablet {
+          width: 250px;
+        }
+
+        &-info {
+          h4 {
+            margin-bottom: 4px;
+          }
+        }
+      }
+    }
+  }
   .experience-container {
     > div {
       display: flex;

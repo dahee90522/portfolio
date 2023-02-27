@@ -181,8 +181,10 @@ function ProjectDetail({ match }) {
                         key={'list' + idx}
                       >
                         {list?.title && (
-                          <h4 className={cx(isTablet ? 'title2BD' : 'bodyBD')} dangerouslySetInnerHTML=
-                          {{__html:list?.title}}></h4>
+                          <h4
+                            className={cx(isTablet ? 'title2BD' : 'bodyBD')}
+                            dangerouslySetInnerHTML={{ __html: list?.title }}
+                          ></h4>
                         )}
                         <div className={cx('list-description-container')}>
                           {list?.description?.map((description, descIndex) => {
@@ -233,6 +235,26 @@ function ProjectDetail({ match }) {
               </div>
             );
           })}
+        </div>
+      )}
+      {projectDetail?.prize && (
+        <div className={cx('prize-container')}>
+          <a className={cx(isTablet ? 'headline3BD' : 'title2BD')} href={projectDetail?.prize?.url}>
+            {projectDetail?.prize?.title}
+          </a>
+          <div className={cx('prize-number', isTablet ? 'title2BD' : 'bodyBD')}>
+            {projectDetail?.prize?.number}
+          </div>
+          <div className={cx('prize-date', isTablet ? 'title2RG' : 'bodyRG')}>
+            {projectDetail?.prize?.date}
+          </div>
+          <div className={cx('prize-org', isTablet ? 'title2RG' : 'bodyRG')}>
+            {projectDetail?.prize?.organization}
+          </div>
+          <div className={cx('prize-description', isTablet ? 'title2MD' : 'bodyMD')}>
+            {projectDetail?.prize?.description}
+          </div>
+          <img src={projectDetail?.prize?.image} />
         </div>
       )}
     </div>
