@@ -18,7 +18,7 @@ function naamezipComponent({ match }) {
       ],
     },
     {
-      title: 'Calendars',
+      title: 'calendars',
       url: 'https://dahee-components.web.app/calendar',
       description: [
         'Multi date picker',
@@ -37,7 +37,7 @@ function naamezipComponent({ match }) {
       usedLibrary: 'react-dates',
     },
     {
-      title: 'Counter',
+      title: 'counter',
       url: 'https://dahee-components.web.app/counter',
       description: ['숫자를 더하고 뺄 수 있는 컴포넌트'],
     },
@@ -68,7 +68,7 @@ function naamezipComponent({ match }) {
       description: ['시간을 선택할 수 있는 컴포넌트'],
     },
     {
-      title: 'time_picker_range',
+      title: 'time picker range',
       url: 'https://dahee-components.web.app/time_picker_range',
       description: ['시간 범위를 선택할 수 있는 컴포넌트'],
     },

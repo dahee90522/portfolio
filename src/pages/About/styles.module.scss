@@ -187,13 +187,19 @@
           }
         }
         h2 {
-          margin: 20px 0 12px;
+          margin: 0 0 4px;
+          @include tablet {
+            margin-top: 20px;
+            margin-bottom: 12px;
+          }
           a {
             color: $cream;
           }
         }
         h3 {
-          width: 150px;
+          @include tablet {
+            width: 150px;
+          }
         }
       }
       .activicy-description {

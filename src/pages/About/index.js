@@ -430,6 +430,11 @@ function About() {
       url: '/about/naamezip/miniapp',
     },
     { coverImage: 'component-cover.png', title: '컴포넌트', url: '/about/naamezip/component' },
+    {
+      coverImage: 'leave_coverImage.png',
+      title: '이탈 플로우 정리',
+      url: '/about/naamezip/leave',
+    },
   ];
   return (
     <div className={cx('about-container')}>
@@ -467,9 +472,7 @@ function About() {
               안녕하세요. 개발과 지식의 성장을 즐기는 개발자 황다희 입니다.
               <br />
               2021년 2월에 미림여자정보과학고등학교를 졸업 후 2021년 7월 방송통신대학교
-              컴퓨터과학과에 입학하여 재학중입니다. <br />
-              프론트엔드는 2019년에 HTML5, CSS3, JAVASCRIPT를 시작으로 현재는 React.js, SASS를
-              사용하고 있습니다.
+              컴퓨터과학과에 입학하여 재학중입니다.
             </div>
           </div>
         </div>
