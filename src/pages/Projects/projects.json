@@ -1,12 +1,83 @@
 [
   {
+    "id": 7,
+    "title": "Unsplash clone coding",
+    "type": "WEB",
+    "site": "http://splash.project-hh.com/",
+    "skills": [
+      { "text": "React.js", "color": "#c8effa" },
+      { "text": "JavaScript", "color": "#fff390" },
+      { "text": "Sass", "color": "#ffa8d3" }
+    ],
+    "tools": [{ "text": "Visual Studio Code", "color": "#b0a1ec" }],
+    "peoples": { "total": 1, "developer": 1 },
+    "contribution": "5/5",
+    "roles": ["기획", "개발"],
+    "duration": "2022.07.01 - 2022.07.15",
+    "coverImage": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/unsplash_coverImage.png",
+    "details": [
+      {
+        "title": "기능",
+        "lists": [
+          {
+            "title": "이미지 리스트를 보여줌(pathname - /, /look-list)",
+            "description": ["이미지 리스트에서 카테고리 검색이 가능함"]
+          }
+        ]
+      },
+      { "image": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/unsplash1.png" },
+      { "image": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/unsplash2.png" },
+      {
+        "lists": [
+          {
+            "title": "리스트에서 이미지 선택 시 모달로 상세페이지를 띄움(pathname - /photos/:photoId)",
+            "description": [
+              "상세페이지에서 사진의 정보, 관련된 이미지와 콜랙션을 확인 가능",
+              "리스트에서 이미지 선택시 상세페이지가 모달로 띄워지는데 새로고침 시 페이지로 보여줌",
+              "상세 페이지와 모달에서 뒤로가기시 이전 페이지(이전 이미지 상세)로 이동"
+            ]
+          }
+        ]
+      },
+      { "image": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/unsplash3.png" },
+      { "image": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/unsplash4.png" },
+      {
+        "title": "앞으로 구현하고자 하는 것",
+        "lists": [
+          {
+            "description": [
+              "이미지 검색시 콜랙션이나 색상 등 선택의 폭을 넓히기",
+              "리스트나 상세페이지에서 작가 선택시 작가 소개 자체페이지 제작",
+              "상세페이지 관련 콜랙션이나 태그 선택시 콜랙션/태그 자체페이지 제작"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "참고",
+        "lists": [
+          {
+            "title": "<a href = 'https://unsplash.com/documentation' target='_blank'>unsplash document</a>"
+          },
+          {
+            "title": "<a href = 'https://blog.logrocket.com/building-a-modal-module-for-react-with-react-router/' target='_blank'>페이지 위에 route를 포함한 모달 띄우기</a>",
+            "description": [
+              "모달로 띄울 시 router 위에 하나의 router를 추가하는 방식으로 기존 페이지 위에 새로운 페이지를 띄움",
+              "모달에서 라우터 객체(ex.photoId)등을 사용하기 위해 withRouter를 지정해야함"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": 1,
     "title": "What’s your color of travel",
     "type": "WEB",
     "skills": [
       { "text": "HTML5", "color": "#ffae97" },
       { "text": "CSS3", "color": "#82a8c5" },
-      { "text": "JavaScript", "color": "#eee27e" },
+      { "text": "JavaScript", "color": "#fff390" },
       { "text": "jQuery", "color": "#8cbee1" },
       { "text": "JSP", "color": "#86aacd" },
       { "text": "mysql", "color": "#9dbed6" }
@@ -85,7 +156,7 @@
     "skills": [
       { "text": "HTML5", "color": "#ffae97" },
       { "text": "CSS3", "color": "#82a8c5" },
-      { "text": "JavaScript", "color": "#eee27e" },
+      { "text": "JavaScript", "color": "#fff390" },
       { "text": "jQuery", "color": "#8cbee1" },
       { "text": "php", "color": "#a9addd" },
       { "text": "ajax", "color": "#7aacd9" },
@@ -176,7 +247,7 @@
     "skills": [
       { "text": "HTML5", "color": "#ffae97" },
       { "text": "CSS3", "color": "#82a8c5" },
-      { "text": "JavaScript", "color": "#eee27e" },
+      { "text": "JavaScript", "color": "#fff390" },
       { "text": "jQuery", "color": "#8cbee1" },
       { "text": "php", "color": "#a9addd" },
       { "text": "mysql", "color": "#9dbed6" }
@@ -236,6 +307,118 @@
           "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/hoppydream_database2_web.png"
         ],
         "caption": "식당을 다녀온 후 적는 후기의 데이터베이스입니다.\n- 별점을 정하여 제출하게 되면 선택이 된 별의 수를 저장합니다.\n- Img는 서버내의 폴더에 이미지를 저장하여 그 경로를 저장하게 됩니다."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Next B",
+    "type": "콘솔 / c",
+    "site": "https://github.com/dahee90522/nextB",
+    "skills": [
+      { "text": "C", "color": "#cdd7e3" },
+      { "text": "C++", "color": "#adc8db" }
+    ],
+    "tools": [{ "text": "Visual Studio", "color": "#c9b0f3" }],
+    "peoples": { "total": 1, "developer": 1 },
+    "contribution": "5/5",
+    "roles": ["기획", "개발"],
+    "duration": "2019.03.20 - 2019.11.01",
+    "coverImage": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/nextB_coverImage.png",
+    "images": [
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/nextB1.png",
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/nextB3.png"
+    ],
+    "details": [
+      {
+        "title": "유사게임",
+        "description": "Amazing Wire(Ketchapp)",
+        "image": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/amazing_wire.png"
+      },
+      {
+        "title": "이 게임으로 결정하게 된 계기",
+        "description": "∙ 중학생 때 많이 했던 게임인데 핸드폰을 변경하면서 다시 설치해서 하고 싶었으나 스토어에서 삭제가 되었는지 찾을 수가 없었습니다.\n∙ 프로젝트 설명을 듣자마자 가장 먼저 떠오르는 게임이었고, 전에도 한번 만들어보고 싶다고 생각했어서 이 게임을 만들어보기로 결정했습니다."
+      },
+      {
+        "title": "작품 설명",
+        "description": "이 게임은 스페이스바를 이용해서 다가오는 선 사이의 빈칸에 아이콘을 넘기며 점수를 얻는 게임입니다.\n가장 경계선에 닿거나 빈칸이 아닌 그 양옆의 선데 닿게 될 경우 아웃이 됩니다.\n\nc++프로젝트로 아이콘의 방향, 모양, 색 등을 정할 수 있습니다.\n\n게임의 종류는 아래에서 위로 떨어지는 것과 위에서 아래로 올라가는 것 2가지가 있으며, 점수를 기록할 때마다 증명서를 받을 수 있습니다."
+      },
+      {
+        "title": "게임 종류",
+        "description": "1) 우에서 좌로 선이 다가오며 스페이스 바를 누르지 앟는 경우 하트는 계속 아래로 내려갑니다.\n2) 우에서 좌로 선이 오며 스페이스 바를 누르지 않는 경우 하트는 위로 계속 올라갑니다."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "팡이의 이상한 탈출",
+    "type": "Java GUI",
+    "site": "https://github.com/dahee90522/pangEtal.git",
+    "skills": [
+      { "text": "Java", "color": "#a9ccef" },
+      { "text": "Java Gui", "color": "#a9ccef" }
+    ],
+    "tools": [{ "text": "eclipse", "color": "#b0a1ec" }],
+    "peoples": { "total": 2, "developer": 2 },
+    "contribution": "3/5",
+    "roles": ["기획", "백엔드", "프론트엔드"],
+    "duration": "2019.04.01 - 2019.11.01",
+    "coverImage": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/pangetal_coverImage.png",
+    "images": [
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/pangetal1.png",
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/pangetal2.png",
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/pangetal3.png",
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/pangetal4.png"
+    ],
+    "details": [
+      {
+        "title": "작품 설명",
+        "description": "이 게임은 레이튼 교수 게임과 보드게임을 합친 게임입니다.\n주인공이 문제를 맞추며 미로에서 탈출하는 스토리 게임입니다.\n문제에는 상식 퀴즈, 넌센스 등이 객관식과 주관식으로 나오게 됩니다.\n중간중간 가벼운 미니게임도 나옵니다.",
+        "image": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/pangetal5.png"
+      },
+      {
+        "description": "주인공의 현재 위치를 알 수 있는 보드입니다.\n퀴즈를 맞출 때마다 한 칸씩 앞으로 가게 됩니다.",
+        "image": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/pangetal6.png"
+      },
+      {
+        "title": "일정 요약(설계 과정 요약 및 진행 과정)",
+        "description": "1년 동안 진행한 JAVA Project로 디자인과 개발로 각자 역할을 나누어 동시에 진행하였습니다.",
+        "image": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/pangetal_planDate.png"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "숫자 뒤집기",
+    "type": "Java",
+    "site": "https://github.com/dahee90522/JAVA/blob/master/2018%EC%9E%90%EB%B0%94%20%ED%8C%8C%EC%9D%BC/java/flipNumber.java",
+    "skills": [{ "text": "Java", "color": "#a9ccef" }],
+    "tools": [{ "text": "eclipse", "color": "#b0a1ec" }],
+    "peoples": { "total": 1, "developer": 1 },
+    "contribution": "5/5",
+    "roles": ["기획", "개발"],
+    "duration": "2019.02.01 - 2019.02.19",
+    "coverImage": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/flipNum_coverImage.png",
+    "images": [
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/flipNum1.png",
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/flipNum2.png",
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/flipNum3.png",
+      "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/flipNum4.png"
+    ],
+    "details": [
+      {
+        "title": "작품 설명",
+        "description": "이 게임은 레이튼 교수 게임과 보드게임을 합친 게임입니다.\n주인공이 문제를 맞추며 미로에서 탈출하는 스토리 게임입니다.\n문제에는 상식 퀴즈, 넌센스 등이 객관식과 주관식으로 나오게 됩니다.\n중간중간 가벼운 미니게임도 나옵니다.",
+        "image": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/pangetal5.png"
+      },
+      {
+        "description": "주인공의 현재 위치를 알 수 있는 보드입니다.\n퀴즈를 맞출 때마다 한 칸씩 앞으로 가게 됩니다.",
+        "image": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/pangetal6.png"
+      },
+      {
+        "title": "일정 요약(설계 과정 요약 및 진행 과정)",
+        "description": "1년 동안 진행한 JAVA Project로 디자인과 개발로 각자 역할을 나누어 동시에 진행하였습니다.",
+        "image": "https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/pangetal_planDate.png"
       }
     ]
   }

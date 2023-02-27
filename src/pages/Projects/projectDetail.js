@@ -94,13 +94,21 @@ function ProjectDetail({ match }) {
                       ? '#fadec9'
                       : role === '프론트엔드'
                       ? '#efefef'
-                      : role === '디자인' && '#d3e5ef'
+                      : role === '디자인'
+                      ? '#d3e5ef'
+                      : role === '개발' && '#dbeddb'
                   }
                   size="LG"
                   className={cx('label', isTablet ? 'bodyBD' : 'captionBD')}
                 />
               );
             })}
+          </div>
+        </div>
+        <div>
+          <div className={cx('info-title', isTablet ? 'title2BD' : 'bodyBD')}>기여도</div>
+          <div className={cx('info-contribution', isTablet ? 'title2RG' : 'bodyRG')}>
+            {projectDetail?.contribution}
           </div>
         </div>
         <div>
@@ -127,7 +135,9 @@ function ProjectDetail({ match }) {
           <div>
             <div className={cx('info-title', isTablet ? 'title2BD' : 'bodyBD')}>사이트</div>
             <div className={cx('info-site', isTablet ? 'title2RG' : 'bodyRG')}>
-              <a href={projectDetail?.site}> {projectDetail?.site}</a>
+              <a href={projectDetail?.site} target={'_blank'}>
+                {projectDetail?.site}
+              </a>
             </div>
           </div>
         )}
@@ -171,7 +181,8 @@ function ProjectDetail({ match }) {
                         key={'list' + idx}
                       >
                         {list?.title && (
-                          <h4 className={cx(isTablet ? 'title2BD' : 'bodyBD')}>{list?.title}</h4>
+                          <h4 className={cx(isTablet ? 'title2BD' : 'bodyBD')} dangerouslySetInnerHTML=
+                          {{__html:list?.title}}></h4>
                         )}
                         <div className={cx('list-description-container')}>
                           {list?.description?.map((description, descIndex) => {

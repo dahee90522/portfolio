@@ -99,6 +99,7 @@
           flex-wrap: wrap;
           justify-content: flex-start;
           a {
+            word-break: break-all;
             color: $cream;
             &:hover {
               color: $cream4;
@@ -144,12 +145,20 @@
     &.no-introduce-image {
       > div {
         display: flex;
-        flex-direction: column;
         gap: 12px;
         width: 100%;
         max-width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        @include tablet {
+          flex-direction: row;
+        }
         img {
           width: 100%;
+          height: fit-content;
+          @include tablet {
+            width: calc(50% - 6px);
+          }
         }
       }
     }
@@ -179,6 +188,13 @@
         }
         h4 {
           margin-bottom: 4px;
+          a {
+            color: $cream;
+            text-decoration: underline;
+            &:hover {
+              color: $cream5;
+            }
+          }
         }
         &.flexable-list {
           display: flex;
