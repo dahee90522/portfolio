@@ -25,7 +25,7 @@ function NavigationBar(props) {
       to: '/',
       title: `DAHEE
       PORTFOLIO`,
-      activeReg: [/^$/],
+      activeReg: [/^$/, /\/about/],
     },
     {
       id: 2,
