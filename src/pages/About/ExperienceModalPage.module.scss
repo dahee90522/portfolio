@@ -64,7 +64,7 @@
         }
       }
       .image-caption {
-        color: $cream5;
+        color: $cream4;
       }
     }
   }
@@ -83,6 +83,7 @@
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   color: black;
+  z-index: 10000;
   .close-button {
     cursor: pointer;
     position: fixed;
@@ -131,7 +132,7 @@
         }
       }
       .image-caption {
-        color: $cream5;
+        color: $cream4;
       }
     }
   }

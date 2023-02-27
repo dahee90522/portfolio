@@ -54,7 +54,11 @@ function ExperienceModalPage({ match, history, ...props }) {
                       <div className={cx('image-container')}>
                         <img src={data?.images[0]?.url} />
                         {data?.images[0]?.caption && (
-                          <div className={cx('image-caption')}>{data?.images[0]?.caption}</div>
+                          <div
+                            className={cx('image-caption', isTablet ? 'captionMD' : 'overlineMD')}
+                          >
+                            {data?.images[0]?.caption}
+                          </div>
                         )}
                       </div>
                     ) : (
@@ -68,7 +72,14 @@ function ExperienceModalPage({ match, history, ...props }) {
                               >
                                 <img src={image?.url} />
                                 {image?.caption && (
-                                  <div className={cx('image-caption')}>{image?.caption}</div>
+                                  <div
+                                    className={cx(
+                                      'image-caption',
+                                      isTablet ? 'captionMD' : 'overlineMD',
+                                    )}
+                                  >
+                                    {image?.caption}
+                                  </div>
                                 )}
                               </div>
                             );
@@ -106,7 +117,9 @@ function ExperienceModalPage({ match, history, ...props }) {
                     <div className={cx('image-container')}>
                       <img src={data?.images[0]?.url} />
                       {data?.images[0]?.caption && (
-                        <div className={cx('image-caption')}>{data?.images[0]?.caption}</div>
+                        <div className={cx('image-caption', isTablet ? 'captionMD' : 'overlineMD')}>
+                          {data?.images[0]?.caption}
+                        </div>
                       )}
                     </div>
                   ) : (
@@ -117,7 +130,14 @@ function ExperienceModalPage({ match, history, ...props }) {
                             <div className={cx('image-container')} key={`image-slide-${index}`}>
                               <img src={image?.url} />
                               {image?.caption && (
-                                <div className={cx('image-caption')}>{image?.caption}</div>
+                                <div
+                                  className={cx(
+                                    'image-caption',
+                                    isTablet ? 'captionMD' : 'overlineMD',
+                                  )}
+                                >
+                                  {image?.caption}
+                                </div>
                               )}
                             </div>
                           );
