@@ -58,8 +58,8 @@ function Contact() {
           <Link
             className={cx(isTablet ? 'headline2SB' : 'title1BD')}
             to="/dahee_resume.pdf"
+            download="dahee_resume"
             target="_blank"
-            download
           >
             Download
           </Link>
