@@ -57,8 +57,8 @@ function Contact() {
           <h2 className={cx(isTablet ? 'headline1BD' : 'headline3BD')}> My resume is Here!!</h2>
           <Link
             className={cx(isTablet ? 'headline2SB' : 'title1BD')}
-            to="/dahee_resume.pdf"
-            download="dahee_resume"
+            to="/resume.pdf"
+            download="황다희_이력서"
             target="_blank"
           >
             Download
