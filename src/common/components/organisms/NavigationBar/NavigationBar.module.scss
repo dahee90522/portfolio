@@ -90,8 +90,9 @@
       box-shadow: 0 0px 7px 0 $background;
       overflow: auto;
       @include desktop {
+        height: fit-content;
+        top: 36px;
         flex-direction: column;
-        position: static;
         padding-top: 0;
         padding-bottom: 140px;
         margin-bottom: 0;
