@@ -12,11 +12,9 @@ function RootRouter() {
   return (
     <Router>
       <ScrollToTop>
-        <>
-          <NavigationBar>
-            <MainRouter />
-          </NavigationBar>
-        </>
+        <NavigationBar>
+          <MainRouter />
+        </NavigationBar>
       </ScrollToTop>
     </Router>
   );

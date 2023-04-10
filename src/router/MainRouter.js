@@ -1,19 +1,20 @@
 import * as Page from 'Pages';
 
 import React, { useEffect, useState } from 'react';
-import { Redirect, Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch, withRouter } from 'react-router-dom';
 
 import ExperienceModalPage from 'Pages/About/ExperienceModalPage';
 import LoadingState from './util/LoadingState';
 import { Provider } from 'mobx-react';
+import ScrollToTop from './util/ScrollToTop';
 import classNames from 'classnames/bind';
 import style from './style.module.scss';
 import { useLocation } from 'react-router-dom';
 
 const cx = classNames.bind(style);
 
-function MainRouter() {
-  const location = useLocation();
+function MainRouter({ location }) {
+  // const location = useLocation();
   const routes = Object.keys(Page).map((pageName) => Page[pageName]);
   const [previousLocation, setPreviousLocation] = useState(location);
   useEffect(() => {
@@ -42,4 +43,4 @@ function MainRouter() {
   );
 }
 
-export default MainRouter;
+export default withRouter(MainRouter);

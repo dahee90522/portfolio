@@ -39,10 +39,11 @@ import { useResponsive } from 'Utils/responsive';
 
 const baseImageUrl = 'https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/';
 const cx = classNames.bind(styles);
-function About() {
+function About({ location }) {
+  const [isModalOpen, setIsModalOpen] = useState(!!location?.state?.isModalOpen);
   const history = useHistory();
   const { isMobile, isTablet, isdesktop } = useResponsive();
-  let careerDate = moment().diff(moment('2020-11-02'), 'months');
+  let careerDate = moment('2023-03-31').diff(moment('2020-11-02'), 'months');
   const languages = [
     {
       title: '편해요',
@@ -436,6 +437,14 @@ function About() {
       url: '/about/naamezip/leave',
     },
   ];
+
+  useEffect(() => {
+    if (isModalOpen) {
+      history.replace(undefined, { isModalOpen: false });
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [isModalOpen]);
   return (
     <div className={cx('about-container')}>
       <section className={cx('dahee-container')} id="dahee">
@@ -447,9 +456,12 @@ function About() {
             />
           </div>
           <div className={cx('left-content')}>
-            <h1 className={cx('headline1BD')} style={{ paddingBottom: '12px' }}>
+            <h1 className={cx('headline1BD')} style={{ paddingBottom: '8px' }}>
               황다희
             </h1>
+            <h2 className={cx('headline3BD')} style={{ paddingBottom: '8px' }}>
+              2002.05.22
+            </h2>
             <div className={cx('chip-container')}>
               <Chip
                 text={`Frontend-Devloper`}
@@ -524,10 +536,10 @@ function About() {
                         textColor="#1b1b1e"
                         backgroundColor={
                           skill?.type === 'analytics'
-                            ? '#dbeddb'
+                            ? '#e2fae7'
                             : skill?.type === 'tool'
-                            ? '#e3e2e0'
-                            : '#fadec9'
+                            ? '#fff1d5'
+                            : '#fad2c8'
                         }
                         size="LG"
                         className={cx('label', isTablet ? 'bodyBD' : 'captionBD')}
@@ -724,6 +736,9 @@ function About() {
                   state: { modal: true },
                 }}
                 className={cx('experience-item-container')}
+                onClick={() => {
+                  history.replace(undefined, { isModalOpen: true });
+                }}
               >
                 <h3 className={cx(isTablet ? 'title2BD' : 'bodyBD')}>{item?.title}</h3>
                 <h4 className={cx(isTablet ? 'bodyRG' : 'captionRG')}> {item?.description}</h4>
