@@ -9,7 +9,7 @@ import { useResponsive } from 'Utils/responsive';
 
 const cx = classNames.bind(styles);
 function Projects({ history, location }) {
-  const { isMobile, isTablet, isdesktop } = useResponsive();
+  const { isMobile, isTablet, isDesktop } = useResponsive();
   const [isModalOpen, setIsModalOpen] = useState(!!location?.state?.isModalOpen);
 
   useEffect(() => {

@@ -13,7 +13,7 @@ import { useScroll } from 'Utils/customHooks';
 const cx = classNames.bind(styles);
 
 function ExperienceModalPage({ match, history, ...props }) {
-  const { isMobile, isTablet, isdesktop } = useResponsive();
+  const { isMobile, isTablet, isDesktop } = useResponsive();
   const location = useLocation();
   const modalRef = useRef();
   const experienceId = match.params?.experienceId;

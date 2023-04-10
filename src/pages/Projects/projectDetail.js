@@ -14,7 +14,7 @@ function ProjectDetail({ match }) {
       return project?.id === projectId;
     })[0],
   );
-  const { isMobile, isTablet, isdesktop } = useResponsive();
+  const { isMobile, isTablet, isDesktop } = useResponsive();
   return (
     <div className={cx('project-detail-container')}>
       <span className={cx(isTablet ? 'bodyRG' : 'captionRG')}>project</span>

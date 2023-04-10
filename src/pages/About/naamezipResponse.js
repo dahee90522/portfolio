@@ -8,7 +8,7 @@ import { useResponsive } from 'Utils/responsive';
 const baseImageUrl = 'https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/';
 const cx = classNames.bind(styles);
 function naamezipResponse({ match }) {
-  const { isMobile, isTablet, isdesktop } = useResponsive();
+  const { isMobile, isTablet, isDesktop } = useResponsive();
   const lists = [
     {
       url: 'https://naamezip.com',

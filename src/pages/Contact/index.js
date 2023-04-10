@@ -14,7 +14,7 @@ import { useResponsive } from 'Utils/responsive';
 const cx = classNames.bind(styles);
 function Contact() {
   const [isCopied, setIsCopied] = useState(false);
-  const { isMobile, isTablet, isdesktop } = useResponsive();
+  const { isMobile, isTablet, isDesktop } = useResponsive();
   return (
     <div className={cx('contact-container')}>
       <section id="contact">

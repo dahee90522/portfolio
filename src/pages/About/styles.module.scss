@@ -130,6 +130,7 @@
           color: $greyscale9;
           box-shadow: #5b5b5be6 0px 3px 7px;
           height: fit-content;
+          overflow: hidden;
           @include tablet {
           }
           &:hover {

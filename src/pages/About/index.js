@@ -42,7 +42,7 @@ const cx = classNames.bind(styles);
 function About({ history, location }) {
   let careerDate = moment('2023-03-31').diff(moment('2020-11-02'), 'months');
   const [isModalOpen, setIsModalOpen] = useState(!!location?.state?.isModalOpen);
-  const { isMobile, isTablet, isdesktop } = useResponsive();
+  const { isMobile, isTablet, isDesktop } = useResponsive();
   const languages = [
     {
       title: '편해요',
@@ -569,9 +569,9 @@ function About({ history, location }) {
               </h3>
             </div>
           </div>
-          <div className={cx('activicy-description', 'bodyRG')}>
+          <div className={cx('activicy-description', isDesktop ? 'title2RG' : 'bodyRG')}>
             <ol>
-              <li className={cx(isTablet ? 'title2BD' : 'bodyBD')}>
+              <li className={cx(isDesktop ? 'title1BD' : isTablet ? 'title2BD' : 'bodyBD')}>
                 홈페이지 전반 ui/ux 개선 및 유지보수
               </li>
               <ul>
@@ -584,7 +584,9 @@ function About({ history, location }) {
                   변경하였습니다.
                 </li>
               </ul>
-              <li className={cx(isTablet ? 'title2BD' : 'bodyBD')}>반응형 웹 개선</li>
+              <li className={cx(isDesktop ? 'title1BD' : isTablet ? 'title2BD' : 'bodyBD')}>
+                반응형 웹 개선
+              </li>
               <ul>
                 <li>
                   기존에는 모바일과 데스크탑 사이즈밖에 없었지만 태블릿을 추가하여 3가지의 디바이스
@@ -594,7 +596,9 @@ function About({ history, location }) {
                   sass의 mixin과 include를 사용하여 사이즈를 재사용하여 지정할 수 있도록 했습니다.
                 </li>
               </ul>
-              <li className={cx(isTablet ? 'title2BD' : 'bodyBD')}>홈페이지 분석</li>
+              <li className={cx(isDesktop ? 'title1BD' : isTablet ? 'title2BD' : 'bodyBD')}>
+                홈페이지 분석
+              </li>
               <ol>
                 <li>마케팅 팀과 협업하여 아래의 CRM/분석 툴을 설치 했습니다.</li>
                 <ol>
@@ -610,7 +614,9 @@ function About({ history, location }) {
                   <li>Happy Talk(해피톡)</li>
                 </ol>
               </ol>
-              <li className={cx(isTablet ? 'title2BD' : 'bodyBD')}>데이터 시각화</li>
+              <li className={cx(isDesktop ? 'title1BD' : isTablet ? 'title2BD' : 'bodyBD')}>
+                데이터 시각화
+              </li>
               <ul>
                 <li>
                   지표에 필요한 데이터를 database에서 추출한 결과를 통해 차트, 표 등으로 데이터
@@ -618,13 +624,17 @@ function About({ history, location }) {
                 </li>
                 <li>redash를 사용하여 데이터 시각화를 하였습니다.</li>
               </ul>
-              <li className={cx(isTablet ? 'title2BD' : 'bodyBD')}>컴포넌트 개발</li>
+              <li className={cx(isDesktop ? 'title1BD' : isTablet ? 'title2BD' : 'bodyBD')}>
+                컴포넌트 개발
+              </li>
               <ul>
                 <li>
                   infinity scroll, pagination 등 컴포넌트를 개발하여 재사용할 수 있도록 하였습니다.
                 </li>
               </ul>
-              <li className={cx(isTablet ? 'title2BD' : 'bodyBD')}>애자일(Agile)</li>
+              <li className={cx(isDesktop ? 'title1BD' : isTablet ? 'title2BD' : 'bodyBD')}>
+                애자일(Agile)
+              </li>
               <ol>
                 <li>2주 단위로 스프린트를 진행했습니다.</li>
                 <li>스프린트 마지막 날에 다음 스프린트를 위한 플래닝 회의를 했습니다.</li>
@@ -661,15 +671,19 @@ function About({ history, location }) {
               </h3>
             </div>
           </div>
-          <div className={cx('activicy-description', 'bodyMD')}>
+          <div className={cx('activicy-description', isDesktop ? 'title2RG' : 'bodyRG')}>
             <ol>
-              <li className={cx(isTablet ? 'title2BD' : 'bodyBD')}>DND 운영</li>
+              <li className={cx(isDesktop ? 'title1BD' : isTablet ? 'title2BD' : 'bodyBD')}>
+                DND 운영
+              </li>
               <ul>
                 <li>사이드프로젝트 7기 지원자 선발</li>
                 <li>사이드프로젝트 8기 지원자 선발</li>
                 <li>조 멘토링(2022.07 - )</li>
               </ul>
-              <li className={cx(isTablet ? 'title2BD' : 'bodyBD')}>개발 세미나 계획</li>
+              <li className={cx(isDesktop ? 'title1BD' : isTablet ? 'title2BD' : 'bodyBD')}>
+                개발 세미나 계획
+              </li>
             </ol>
           </div>
         </div>

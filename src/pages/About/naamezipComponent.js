@@ -7,7 +7,7 @@ import { useResponsive } from 'Utils/responsive';
 
 const cx = classNames.bind(styles);
 function naamezipComponent({ match }) {
-  const { isMobile, isTablet, isdesktop } = useResponsive();
+  const { isMobile, isTablet, isDesktop } = useResponsive();
   const componentLists = [
     {
       title: 'add delete input',

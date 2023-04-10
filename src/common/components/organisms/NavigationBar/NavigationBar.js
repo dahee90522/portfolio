@@ -13,7 +13,7 @@ import { withRouter } from 'react-router-dom';
 const cx = classNames.bind(style);
 
 function NavigationBar(props) {
-  const { isMobile, isTablet, isdesktop } = useResponsive();
+  const { isMobile, isTablet, isDesktop } = useResponsive();
   const { title } = props;
   const location = useLocation();
   const pathname = location.pathname;

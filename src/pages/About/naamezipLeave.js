@@ -8,7 +8,7 @@ import { useResponsive } from 'Utils/responsive';
 const baseImageUrl = 'https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/';
 const cx = classNames.bind(styles);
 function naamezipLeave({ match }) {
-  const { isMobile, isTablet, isdesktop } = useResponsive();
+  const { isMobile, isTablet, isDesktop } = useResponsive();
   return (
     <div className={cx('naamezip-leave-container')}>
       <span className={cx(isTablet ? 'bodyRG' : 'captionRG')}>남의집 프로젝트</span>
