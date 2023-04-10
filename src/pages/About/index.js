@@ -426,7 +426,7 @@ function About({ history, location }) {
     { coverImage: 'response_web_image.png', title: '반응형 웹', url: '/about/naamezip/response' },
     {
       coverImage: 'daangn_x_naamezip.png',
-      title: '당근마켓 미니앱 개발',
+      title: '당근마켓 미니앱',
       url: '/about/naamezip/miniapp',
     },
     { coverImage: 'component-cover.png', title: '컴포넌트', url: '/about/naamezip/component' },

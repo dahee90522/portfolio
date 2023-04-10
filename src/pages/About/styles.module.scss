@@ -129,7 +129,7 @@
           background-color: $greyscale1;
           color: $greyscale9;
           box-shadow: #5b5b5be6 0px 3px 7px;
-          height: fit-content;
+          height: auto;
           overflow: hidden;
           @include tablet {
           }
