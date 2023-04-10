@@ -5,6 +5,7 @@ import { Redirect, Route, Switch, withRouter } from 'react-router-dom';
 
 import ExperienceModalPage from 'Pages/About/ExperienceModalPage';
 import LoadingState from './util/LoadingState';
+import ProjectDetailModal from 'Pages/Projects/ProjectDetailModal';
 import { Provider } from 'mobx-react';
 import ScrollToTop from './util/ScrollToTop';
 import classNames from 'classnames/bind';
@@ -31,12 +32,18 @@ function MainRouter({ location }) {
             return <Route key={route?.path} exact path={route?.path} component={route.default} />;
           })}
           <Route exact path="/experience/:experienceId" component={ExperienceModalPage} />
+          <Route exact path="/project/:projectId" component={ProjectDetailModal} />
           <Redirect path="*" to="/" />
         </Switch>
         {isModal ? (
-          <Route exact path="/experience/:experienceId">
-            <ExperienceModalPage isModal />
-          </Route>
+          <>
+            <Route exact path="/experience/:experienceId">
+              <ExperienceModalPage isModal />
+            </Route>
+            <Route exact path="/project/:projectId">
+              <ProjectDetailModal isModal />
+            </Route>
+          </>
         ) : null}
       </Provider>
     </div>

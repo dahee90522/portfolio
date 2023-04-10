@@ -1,4 +1,4 @@
-import { Link, useHistory } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import {
   SvgBootStrap,
@@ -39,11 +39,10 @@ import { useResponsive } from 'Utils/responsive';
 
 const baseImageUrl = 'https://hh-image-bucket.s3.ap-northeast-2.amazonaws.com/';
 const cx = classNames.bind(styles);
-function About({ location }) {
-  const [isModalOpen, setIsModalOpen] = useState(!!location?.state?.isModalOpen);
-  const history = useHistory();
-  const { isMobile, isTablet, isdesktop } = useResponsive();
+function About({ history, location }) {
   let careerDate = moment('2023-03-31').diff(moment('2020-11-02'), 'months');
+  const [isModalOpen, setIsModalOpen] = useState(!!location?.state?.isModalOpen);
+  const { isMobile, isTablet, isdesktop } = useResponsive();
   const languages = [
     {
       title: '편해요',
@@ -753,6 +752,6 @@ function About({ location }) {
     </div>
   );
 }
-export default About;
+export default withRouter(About);
 
 export const path = ['/', '/about'];

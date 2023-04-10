@@ -6,6 +6,9 @@ const ScrollToTop = ({ children, location: { pathname, search } }) => {
     if (pathname.indexOf('/experience/') >= 0 || pathname === '/') {
       return;
     }
+    if (pathname.indexOf('/project') >= 0) {
+      return;
+    }
     window.scrollTo(0, 0);
   }, [pathname, search]);
 

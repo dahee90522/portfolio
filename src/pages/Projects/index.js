@@ -1,15 +1,24 @@
+import { Link, withRouter } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 
 import { Chip } from 'Components/molecules';
-import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import projects from './projects.json';
 import styles from './styles.module.scss';
 import { useResponsive } from 'Utils/responsive';
 
 const cx = classNames.bind(styles);
-function Projects() {
+function Projects({ history, location }) {
   const { isMobile, isTablet, isdesktop } = useResponsive();
+  const [isModalOpen, setIsModalOpen] = useState(!!location?.state?.isModalOpen);
+
+  useEffect(() => {
+    if (isModalOpen) {
+      history.replace(undefined, { isModalOpen: false });
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [isModalOpen]);
   return (
     <div className={cx('projects-container')}>
       <section id="experience">
@@ -26,6 +35,10 @@ function Projects() {
                 key={`project-link-${index}`}
                 to={{
                   pathname: `/project/${item?.id}`,
+                  state: { modal: true },
+                }}
+                onClick={() => {
+                  history.replace(undefined, { isModalOpen: true });
                 }}
                 className={cx('project-item-container')}
               >
