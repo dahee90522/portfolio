@@ -640,23 +640,24 @@ function About({ history, location }) {
                 <li>스프린트 마지막 날에 다음 스프린트를 위한 플래닝 회의를 했습니다.</li>
               </ol>
             </ol>
+            <div className={cx('naamezip-activity')}>
+              <h2 className={cx(isTablet ? 'headline2SB' : 'title1BD')}>남의집 프로젝트 보기</h2>
+              <div className={cx('items-container')}>
+                {workingPage?.map((page, index) => {
+                  return (
+                    <div onClick={() => history.push(page?.url)}>
+                      <div className={cx('image-container')}>
+                        <img src={baseImageUrl + page?.coverImage} />
+                      </div>
+                      <h3 className={cx(isTablet ? 'title2MD' : 'bodyMD')}>{page?.title}</h3>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
-        <div className={cx('naamezip-activity')}>
-          <h2 className={cx(isTablet ? 'headline2SB' : 'title1BD')}>남의집 프로젝트 보기</h2>
-          <div className={cx('items-container')}>
-            {workingPage?.map((page, index) => {
-              return (
-                <div onClick={() => history.push(page?.url)}>
-                  <div className={cx('image-container')}>
-                    <img src={baseImageUrl + page?.coverImage} />
-                  </div>
-                  <h3 className={cx(isTablet ? 'title2MD' : 'bodyMD')}>{page?.title}</h3>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+
         <div className={cx('job-desc-wrapper', 'dnd-wrapper')}>
           <div className={cx('company-icon')}>
             {isTablet ? <SvgDND /> : <SvgDNDSM />}

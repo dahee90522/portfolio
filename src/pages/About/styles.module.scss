@@ -109,9 +109,15 @@
   }
   .career-container {
     .naamezip-activity {
+      margin-top: 20px;
       margin-bottom: 32px;
+      border-top: 1px solid #fffcec42;
+      padding-top: 20px;
+
       @include desktop {
+        margin-top: 40px;
         margin-bottom: 40px;
+        padding-top: 40px;
       }
       h2 {
         margin-bottom: 12px;
@@ -121,10 +127,6 @@
         display: flex;
         gap: 20px 20px;
         flex-wrap: wrap;
-        @include tablet {
-          flex-wrap: nowrap;
-          // gap: 20px;
-        }
         > div {
           width: calc(50% - 10px);
           border-radius: 4px;
@@ -136,12 +138,12 @@
           @include tablet {
           }
           &:hover {
-            background-color: $cream2;
+            background-color: $cream3;
           }
           h3 {
             border-top: 1px solid #ddd;
-
             padding: 12px 20px;
+            text-align: center;
           }
           .image-container {
             width: 100%;
@@ -323,7 +325,7 @@
           bottom: 20px;
         }
         &:hover {
-          background-color: $cream2;
+          background-color: $cream3;
           .gotoButton {
             color: $greyscale9;
           }
