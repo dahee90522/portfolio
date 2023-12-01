@@ -53,7 +53,7 @@ function Contact() {
             </button>
           </div>
         </div>
-        <div className={cx('resume')}>
+        {/* <div className={cx('resume')}>
           <h2 className={cx(isTablet ? 'headline1BD' : 'headline3BD')}> My resume is Here!!</h2>
           <Link
             className={cx(isTablet ? 'headline2SB' : 'title1BD')}
@@ -63,7 +63,7 @@ function Contact() {
           >
             Download
           </Link>
-        </div>
+        </div> */}
       </section>
       <Popup
         openModal={isCopied}
