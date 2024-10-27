@@ -9,12 +9,14 @@ import SvgJavaScript from './javascript.svg';
 import SvgKotlin from './kotlin.svg';
 import SvgMarkdown from './markdown.svg';
 import SvgMysql from './mysql.svg';
+import SvgNextjs from './nextjs.svg';
 import SvgOracle from './oracle.svg';
 import SvgPhp from './php.svg';
 import SvgPython from './python.svg';
 import SvgReact from './react.svg';
 import SvgSass from './sass.svg';
 import SvgSpring from './spring.svg';
+import SvgStyledComponents from './styled-components.svg';
 import Svghtml5 from './html5.svg';
 import SvgjQuery from './jquery.svg';
 import Svgjsp from './jsp.svg';
@@ -23,6 +25,7 @@ export {
   SvgBootStrap,
   SvgGit,
   SvgJavaScript,
+  SvgNextjs,
   SvgMysql,
   SvgOracle,
   SvgSass,
@@ -40,4 +43,5 @@ export {
   SvgKotlin,
   SvgSpring,
   Svgjsp,
+  SvgStyledComponents,
 };

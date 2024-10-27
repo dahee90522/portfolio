@@ -18,6 +18,16 @@ function NavigationBar(props) {
   const location = useLocation();
   const pathname = location.pathname;
   const [isEnter, setIsEnter] = useState(false);
+
+  const [previousLocation, setPreviousLocation] = useState(location);
+  useEffect(() => {
+    if (!(location?.state && location?.state?.modal)) {
+      setPreviousLocation(location);
+    }
+  }, [location]);
+  const isModal =
+    location?.state && location?.state?.modal && previousLocation !== location && isTablet;
+
   const index = [
     {
       id: 1,
@@ -53,7 +63,7 @@ function NavigationBar(props) {
   return (
     <>
       <div className={cx('header-container')}>
-        {['/', '/about', '/projects', '/contact'].includes(pathname) && (
+        {(isModal || ['/', '/about', '/projects', '/contact'].includes(pathname)) && (
           <div className={cx('introduce-container')}>
             <div
               className={cx(

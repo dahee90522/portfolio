@@ -19,7 +19,7 @@
   }
   > img {
     width: 100%;
-    background-color: $cream1;
+    background-color: $greyscale1;
   }
   .image-flex-container {
     display: flex;
@@ -35,7 +35,7 @@
     margin-top: 4px;
     display: inline-block;
     &:hover {
-      color: $cream5;
+      color: $cream4;
       text-decoration: underline;
     }
   }

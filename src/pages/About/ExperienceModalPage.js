@@ -24,6 +24,21 @@ function ExperienceModalPage({ match, history, ...props }) {
     })[0],
   );
 
+  //   useEffect(() => {
+  //     setTimeout(() => {
+  //       window.scrollTo(0, 0);
+  //     }, 10);
+  //   }, []);
+
+  useEffect(() => {
+    if (isModal) {
+      document.documentElement.style.overflow = 'hidden';
+    }
+    return () => {
+      document.documentElement.style.overflow = '';
+    };
+  });
+
   if (isModal) {
     return (
       <div ref={modalRef} className={cx('modal-wrapper')} onClick={() => history.goBack()}>

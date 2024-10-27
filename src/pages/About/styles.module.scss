@@ -108,16 +108,47 @@
     }
   }
   .career-container {
+    .sub-divider {
+      background-color: $cream2;
+      border-radius: 2px;
+      opacity: 50%;
+      height: 1px;
+      border-width: 0px;
+      @include tablet {
+        margin: 32px auto 32px;
+      }
+      @include mobile {
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        margin: 32px auto 32px;
+        position: relative;
+
+        &::after,
+        &::before {
+          content: '';
+          position: absolute;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: $cream2;
+        }
+        &:before {
+          top: 1px;
+          right: 12px;
+        }
+        &:after {
+          top: 1px;
+          left: 12px;
+        }
+      }
+    }
     .naamezip-activity {
       margin-top: 20px;
-      margin-bottom: 32px;
-      border-top: 1px solid #fffcec42;
-      padding-top: 20px;
 
       @include desktop {
         margin-top: 40px;
-        margin-bottom: 40px;
-        padding-top: 40px;
+        padding-bottom: 32px;
       }
       h2 {
         margin-bottom: 12px;
@@ -138,7 +169,7 @@
           @include tablet {
           }
           &:hover {
-            background-color: $cream3;
+            background-color: $cream;
           }
           h3 {
             border-top: 1px solid #ddd;
@@ -169,7 +200,6 @@
       }
     }
     .job-desc-wrapper {
-      margin-bottom: 32px;
       &:last-child {
         margin: 0;
       }
@@ -185,6 +215,7 @@
           display: flex;
           gap: 20px;
           margin-bottom: 20px;
+          align-items: center;
           br {
             display: none;
           }
@@ -208,6 +239,19 @@
         }
       }
       .activicy-description {
+        button {
+          line-height: 24px;
+          border: 1px solid $cream3;
+          padding: 0 6px;
+          border-radius: 4px;
+          color: $cream;
+          margin-top: 8px;
+          &:hover {
+            background-color: $cream;
+            border-color: $cream;
+            color: $background;
+          }
+        }
         ol,
         ul {
           padding-left: 20px;
@@ -217,7 +261,7 @@
         > ol {
           > li {
             margin-bottom: 4px;
-            margin-top: 12px;
+            margin-top: 20px;
             &:first-of-type {
               margin-top: 0;
             }
@@ -300,7 +344,7 @@
       flex-wrap: wrap;
       .experience-item-container {
         width: calc(50% - 10px);
-        background-color: $cream1;
+        background-color: $greyscale1;
         border-radius: 12px;
         padding: 20px 12px 40px;
         word-break: break-all;
@@ -325,7 +369,7 @@
           bottom: 20px;
         }
         &:hover {
-          background-color: $cream3;
+          background-color: $cream;
           .gotoButton {
             color: $greyscale9;
           }

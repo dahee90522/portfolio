@@ -14,7 +14,7 @@
     overflow: hidden;
     margin-top: 20px;
     &:hover {
-      color: $cream5;
+      color: $cream4;
     }
     @include tablet {
       gap: 20px;
@@ -102,7 +102,7 @@
             word-break: break-all;
             color: $cream;
             &:hover {
-              color: $cream4;
+              color: $cream3;
             }
           }
         }
@@ -192,7 +192,7 @@
             color: $cream;
             text-decoration: underline;
             &:hover {
-              color: $cream5;
+              color: $cream4;
             }
           }
         }
@@ -281,7 +281,7 @@
       margin-bottom: 8px;
       display: inline-block;
       &:hover {
-        color: $cream5;
+        color: $cream4;
       }
     }
     .prize {

@@ -24,7 +24,7 @@
       color: $cream;
       display: inline-block;
       &:hover {
-        color: $cream5;
+        color: $cream4;
       }
     }
     > a {
@@ -38,7 +38,7 @@
       a {
         &:hover {
           > div {
-            background-color: $cream5 !important;
+            background-color: $cream4 !important;
           }
         }
       }

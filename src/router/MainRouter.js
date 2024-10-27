@@ -11,11 +11,13 @@ import ScrollToTop from './util/ScrollToTop';
 import classNames from 'classnames/bind';
 import style from './style.module.scss';
 import { useLocation } from 'react-router-dom';
+import { useResponsive } from 'Utils/responsive';
 
 const cx = classNames.bind(style);
 
 function MainRouter({ location }) {
   // const location = useLocation();
+  const { isMobile, isTablet, isDesktop } = useResponsive();
   const routes = Object.keys(Page).map((pageName) => Page[pageName]);
   const [previousLocation, setPreviousLocation] = useState(location);
   useEffect(() => {
@@ -23,7 +25,8 @@ function MainRouter({ location }) {
       setPreviousLocation(location);
     }
   }, [location]);
-  const isModal = location?.state && location?.state?.modal && previousLocation !== location;
+  const isModal =
+    location?.state && location?.state?.modal && previousLocation !== location && isTablet;
   return (
     <div className={cx('router')}>
       <Provider loading={LoadingState}>

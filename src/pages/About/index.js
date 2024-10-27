@@ -12,12 +12,14 @@ import {
   SvgKotlin,
   SvgMarkdown,
   SvgMysql,
+  SvgNextjs,
   SvgOracle,
   SvgPhp,
   SvgPython,
   SvgReact,
   SvgSass,
   SvgSpring,
+  SvgStyledComponents,
   Svghtml5,
   SvgjQuery,
   Svgjsp,
@@ -27,6 +29,8 @@ import { Chip } from 'Components/molecules';
 import Lottie from 'react-lottie-player';
 import SvgDND from 'Assets/svgs/dnd-logo.svg';
 import SvgDNDSM from 'Assets/svgs/dnd-logo-sm.svg';
+import SvgDanble from 'Assets/svgs/danble-logo.svg';
+import SvgDanbleSm from 'Assets/svgs/danble-logo-sm.svg';
 import SvgNaamezip from 'Assets/svgs/naamezip-logo.svg';
 import SvgNaamezipSM from 'Assets/svgs/naamezip-logo-sm.svg';
 import { TypeAnimation } from 'react-type-animation';
@@ -63,6 +67,18 @@ function About({ history, location }) {
           text: () => {
             return (
               <>
+                <SvgNextjs style={{ fill: '#000' }} />
+                Next.js
+              </>
+            );
+          },
+          textColor: '#1b1b1e',
+          backgroundColor: '#fffcec',
+        },
+        {
+          text: () => {
+            return (
+              <>
                 <SvgJavaScript style={{ fill: '#F7DF1E' }} />
                 JavaScript(ES6+)
               </>
@@ -87,9 +103,32 @@ function About({ history, location }) {
           text: () => {
             return (
               <>
-                <SvgSass style={{ fill: '#CC6699' }} />
-                SASS / <SvgCss style={{ fill: '#1572B6' }} />
+                <SvgCss style={{ fill: '#1572B6' }} />
                 CSS3
+              </>
+            );
+          },
+          textColor: '#1b1b1e',
+          backgroundColor: '#fffcec',
+        },
+        {
+          text: () => {
+            return (
+              <>
+                <SvgSass style={{ fill: '#CC6699' }} />
+                SASS
+              </>
+            );
+          },
+          textColor: '#1b1b1e',
+          backgroundColor: '#fffcec',
+        },
+        {
+          text: () => {
+            return (
+              <>
+                <SvgStyledComponents />
+                styled components
               </>
             );
           },
@@ -332,6 +371,12 @@ function About({ history, location }) {
       skills: [
         {
           text: () => {
+            return <>Vercel</>;
+          },
+          type: 'hosting',
+        },
+        {
+          text: () => {
             return <>AWS - CloudFront</>;
           },
           type: 'hosting',
@@ -423,13 +468,13 @@ function About({ history, location }) {
     },
   ];
   const workingPage = [
-    { coverImage: 'response_web_image.png', title: '반응형 웹', url: '/about/naamezip/response' },
+    // { coverImage: 'response_web_image.png', title: '반응형 웹', url: '/about/naamezip/response' },
     {
       coverImage: 'daangn_x_naamezip.png',
       title: '당근마켓 미니앱',
       url: '/about/naamezip/miniapp',
     },
-    { coverImage: 'component-cover.png', title: '컴포넌트', url: '/about/naamezip/component' },
+    // { coverImage: 'component-cover.png', title: '컴포넌트', url: '/about/naamezip/component' },
     {
       coverImage: 'leave_coverImage.png',
       title: '이탈 플로우 정리',
@@ -596,6 +641,14 @@ function About({ history, location }) {
                   sass의 mixin과 include를 사용하여 사이즈를 재사용하여 지정할 수 있도록 했습니다.
                 </li>
               </ul>
+              <button
+                className={cx(isTablet ? 'bodyMD' : 'captionMD')}
+                onClick={() => {
+                  history.push('/about/naamezip/response');
+                }}
+              >
+                더 자세히 보기
+              </button>
               <li className={cx(isDesktop ? 'title1BD' : isTablet ? 'title2BD' : 'bodyBD')}>
                 홈페이지 분석
               </li>
@@ -632,13 +685,21 @@ function About({ history, location }) {
                   infinity scroll, pagination 등 컴포넌트를 개발하여 재사용할 수 있도록 하였습니다.
                 </li>
               </ul>
+              <button
+                className={cx(isTablet ? 'bodyMD' : 'captionMD')}
+                onClick={() => history.push('/about/naamezip/component')}
+              >
+                더 자세히 보기
+              </button>
               <li className={cx(isDesktop ? 'title1BD' : isTablet ? 'title2BD' : 'bodyBD')}>
                 애자일(Agile)
               </li>
-              <ol>
-                <li>2주 단위로 스프린트를 진행했습니다.</li>
-                <li>스프린트 마지막 날에 다음 스프린트를 위한 플래닝 회의를 했습니다.</li>
-              </ol>
+              <ul>
+                <li>
+                  2주 단위로 스프린트를 진행하였으며 마지막 날에 다음 스프린트를 위한 플래닝 회의를
+                  진행하셨습니다.
+                </li>
+              </ul>
             </ol>
             <div className={cx('naamezip-activity')}>
               <h2 className={cx(isTablet ? 'headline2SB' : 'title1BD')}>남의집 프로젝트 보기</h2>
@@ -655,6 +716,73 @@ function About({ history, location }) {
                 })}
               </div>
             </div>
+            <hr className={cx('sub-divider')} />
+          </div>
+        </div>
+        <div className={cx('job-desc-wrapper', 'danble-wrapper')}>
+          <div className={cx('company-icon', 'danble')}>
+            {isTablet ? <SvgDanble /> : <SvgDanbleSm />}
+            <div>
+              <h2 className={cx(isTablet ? 'headline2SB' : 'title1BD')}>
+                <a href="https://danble.co.kr" target="_blank">
+                  테일러타운 / 댄블
+                </a>
+              </h2>
+              <h3 className={cx(isTablet ? 'headline3MD' : 'title1MD')}>
+                2023년 05월
+                <br />- 재직중
+              </h3>
+            </div>
+          </div>
+          <div className={cx('activicy-description', isDesktop ? 'title2RG' : 'bodyRG')}>
+            <ol>
+              <li className={cx(isDesktop ? 'title1BD' : isTablet ? 'title2BD' : 'bodyBD')}>
+                코드 최적화
+              </li>
+              <ul>
+                <li>
+                  이미지 리사이징(CDN)을 통해 느리게 불러지던 이미지들의 용량을 조절하여 빠르게
+                  로드되도록 변경했습니다.
+                </li>
+                <li>
+                  이미지 리사이징(CDN)을 통해 느리게 불러지던 이미지들의 용량을 조절하여 빠르게
+                  로드되도록 변경했습니다.
+                </li>
+              </ul>
+              <li className={cx(isDesktop ? 'title1BD' : isTablet ? 'title2BD' : 'bodyBD')}>
+                컴포넌트 개발
+              </li>
+              <ul>
+                <li>toast popup, 헤더 등 컴포넌트를 개발하여 재사용할 수 있도록 하였습니다.</li>
+              </ul>
+              <li className={cx(isDesktop ? 'title1BD' : isTablet ? 'title2BD' : 'bodyBD')}>
+                seo 최적화
+              </li>
+              <ul>
+                <li>
+                  테크니컬 seo 적용을 위해 구조화된 데이터를 적용하였습니다.
+                  <ul>
+                    <li>
+                      조직(Organization), 상품(Product) 등에 적용하여 검색 시 더 가공된 데이터가
+                      노출되도록 하였습니다.
+                    </li>
+                  </ul>
+                </li>
+                <li>html semantic 태그로 태그들을 변경하여 seo 성능을 더 향상되도록 하였습니다.</li>
+              </ul>
+              <li className={cx(isDesktop ? 'title1BD' : isTablet ? 'title2BD' : 'bodyBD')}>
+                애자일(Agile)
+              </li>
+              <ol>
+                <li>2주/1주 단위로 스프린트를 진행했습니다.</li>
+                <li>
+                  매주 플래닝 회의를 통해 백로그들을 보며 다음 스프린트에 어떤 태스크를 진행할지
+                  계획했습니다.
+                </li>
+                <li>매주 진행했던 태스크의 지표를 보며 회고하고 디벨롭하였습니다.</li>
+              </ol>
+            </ol>
+            <hr className={cx('sub-divider')} />
           </div>
         </div>
 

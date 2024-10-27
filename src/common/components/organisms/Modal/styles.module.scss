@@ -37,7 +37,7 @@
   font-weight: 300;
   line-height: 1.54;
   letter-spacing: -0.65px;
-  color: #707070;
+  color: $greyscale8;
   margin-top: 10px;
   cursor: pointer;
   white-space: pre-line;
@@ -57,7 +57,7 @@
     line-height: 1.54;
     letter-spacing: -0.65px;
     text-align: left;
-    color: #707070;
+    color: $greyscale8;
     width: 100%;
     strong {
       font-weight: bold;
@@ -213,7 +213,7 @@
       height: 48px;
       border-radius: 4px;
       &:hover {
-        background-color: $cream4;
+        background-color: $cream3;
       }
     }
   }

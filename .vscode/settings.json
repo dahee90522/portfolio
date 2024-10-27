@@ -8,9 +8,9 @@
     "editor.formatOnSave": true
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true
-  },
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+},
   "stylelint.enable": true,
   "eslint.workingDirectories": [{ "mode": "auto" }],
   "editor.insertSpaces": true

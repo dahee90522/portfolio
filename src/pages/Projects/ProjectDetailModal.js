@@ -12,7 +12,7 @@ const cx = classNames.bind(styles);
 function ProjectDetailModal({ match, history, ...props }) {
   const { isMobile, isTablet, isDesktop } = useResponsive();
   const location = useLocation();
-  const modalRef = useRef();
+  const pageRef = useRef();
   const projectId = parseInt(match.params.projectId);
   const [projectDetail, setProjectDetail] = useState(
     projects?.filter((project) => {
@@ -21,9 +21,24 @@ function ProjectDetailModal({ match, history, ...props }) {
   );
   const [isModal, setIsModal] = useState(props?.isModal);
 
+  //   useEffect(() => {
+  //     setTimeout(() => {
+  //       window.scrollTo(0, 0);
+  //     }, 10);
+  //   }, []);
+
+  useEffect(() => {
+    if (isModal) {
+      document.documentElement.style.overflow = 'hidden';
+    }
+    return () => {
+      document.documentElement.style.overflow = '';
+    };
+  });
+
   if (isModal) {
     return (
-      <div ref={modalRef} className={cx('modal-wrapper')} onClick={() => history.goBack()}>
+      <div ref={pageRef} className={cx('modal-wrapper')} onClick={() => history.goBack()}>
         <div
           id={'modal-id'}
           className={cx('modal', 'project-detail-container')}
@@ -300,7 +315,7 @@ function ProjectDetailModal({ match, history, ...props }) {
     );
   } else if (!isModal) {
     return (
-      <div className={cx('project-detail-container')}>
+      <div ref={pageRef} className={cx('project-detail-container')}>
         <span className={cx(isTablet ? 'bodyRG' : 'captionRG')}>project</span>
         <h1 className={cx('headline1BD')}>{projectDetail?.title}</h1>
         {projectDetail?.coverImage && (
